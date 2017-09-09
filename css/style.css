@@ -1,5 +1,4 @@
 body {
-  background: linear-gradient(to right, #14e5d4, #119be0);
   padding-left: 0;
   padding-right: 0;
   border: 0;
@@ -8,6 +7,7 @@ body {
 }
 
 .bovenbar {
+  background: linear-gradient(to right, #14e5d4, #119be0);
   width: 100%;
   height: 40px;
   padding-top: 20px;
@@ -15,4 +15,10 @@ body {
   color: white;
   position: absolute;
   text-align: center;
+  height: 300px;
+}
+
+.about {
+  background: linear-gradient(to right, #10e0e0, #119be0);
+  height: 300px;
 }
