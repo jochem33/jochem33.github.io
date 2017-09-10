@@ -5,25 +5,30 @@
   margin: 0;
 }
 
-.bovenbar {
+.paginas {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#page1 {
   background: linear-gradient(to right, #14e5d4, #119be0);
-  width: 100%;
-  color: white;
-  text-align: center;
 }
 
-.about {
+#page2 {
   background: linear-gradient(to bottom, #00ff72, #119be0);
-  width: 100%;
-  color: white;
-  text-align: center;
 }
 
-.projects {
+#page3 {
   background: linear-gradient(to left, #9d00ff, #119be0);
-  width: 100%;
-  color: white;
-  text-align: center;
+}
+
+#page4 {
+  background: linear-gradient(to bottom, #00ff72, #119be0);
+}
+
+#page5 {
+  background: linear-gradient(to left, #9d00ff, #119be0);
 }
 
 .next {
@@ -32,4 +37,38 @@
   color: white;
   border-radius: 7px;
   font-size: 20px;
+}
+
+.menutitelbo {
+  bottom: 1000px;
+}
+
+.sidebar {
+  position: fixed;
+  transition: 0.3s;
+  color: transparent;
+  height: 35px;
+}
+
+#sidebar1 {
+  top: 100px;
+}
+
+#sidebar2 {
+  top: 135px;
+}
+
+.sidebar:hover {
+  color: white;
+}
+
+.sideimg {
+  height: 30px;
+  padding-left: 3px;
+  float: left;
+}
+
+.sidetxt {
+  padding-left: 5px;
+  float: left;
 }

@@ -11,6 +11,11 @@ var page2 = document.getElementById('page2');
 page2.style.height = hoog + "px";
 var page3 = document.getElementById('page3');
 page3.style.height = hoog + "px";
+var page4 = document.getElementById('page4');
+page4.style.height = hoog + "px";
+var page5 = document.getElementById('page5');
+page5.style.height = hoog + "px";
+
 
 function scrollTo(to, duration) {
     if (document.body.scrollTop == to) return;
