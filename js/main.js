@@ -1,9 +1,17 @@
-/*
-window.onscroll = function (e)
-{
+var scroll = 1;
 
-}
-*/
+var lastScrollTop = 0;
+element.addEventListener("scroll", function(){
+   var st = window.pageYOffset || document.documentElement.scrollTop;
+   if (st > lastScrollTop){
+       // downscroll code
+   } else {
+      // upscroll code
+   }
+   lastScrollTop = st;
+}, false);
+
+
 var hoog = window.innerHeight;
 var page1 = document.getElementById('page1');
 page1.style.height = hoog + "px";
