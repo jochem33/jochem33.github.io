@@ -18,3 +18,11 @@
   color: white;
   text-align: center;
 }
+
+.next {
+  background: linear-gradient(to right, #ff0000, #ff8c00);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  font-size: 20px;
+}
