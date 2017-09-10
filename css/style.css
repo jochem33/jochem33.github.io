@@ -44,10 +44,6 @@
   font-size: 20px;
 }
 
-.menutitelbo {
-  bottom: 1000px;
-}
-
 .sidebar {
   position: fixed;
   transition: 0.3s;
