@@ -1,16 +1,15 @@
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+
 var scroll = 1;
 
-var lastScrollTop = 0;
-element.addEventListener("scroll", function(){
-   var st = window.pageYOffset || document.documentElement.scrollTop;
-   if (st > lastScrollTop){
-       // downscroll code
-   } else {
-      // upscroll code
-   }
-   lastScrollTop = st;
-}, false);
-
+//scroll++;
+//test("an" + scroll);
 
 var hoog = window.innerHeight;
 var page1 = document.getElementById('page1');
