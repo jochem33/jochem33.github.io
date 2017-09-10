@@ -19,6 +19,13 @@
   text-align: center;
 }
 
+.projects {
+  background: linear-gradient(to left, #9d00ff, #119be0);
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 .next {
   background: linear-gradient(to right, #ff0000, #ff8c00);
   padding: 10px;
