@@ -3,6 +3,7 @@
   border: 0;
   outline: 0;
   margin: 0;
+  font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
 }
 
 .paginas {
@@ -11,24 +12,28 @@
   text-align: center;
 }
 
+.titel {
+  padding: 10px;
+}
+
 #page1 {
   background: linear-gradient(to right, #14e5d4, #119be0);
 }
 
 #page2 {
-  background: linear-gradient(to bottom, #00ff72, #119be0);
+  background: linear-gradient(to left, #ff0094, #ff3b00);
 }
 
 #page3 {
-  background: linear-gradient(to left, #9d00ff, #119be0);
+  background: linear-gradient(to left, #e900ff, #119be0);
 }
 
 #page4 {
-  background: linear-gradient(to bottom, #00ff72, #119be0);
+  background: linear-gradient(to right, #00ff72, #119be0);
 }
 
 #page5 {
-  background: linear-gradient(to left, #9d00ff, #119be0);
+  background: linear-gradient(to left, #A300CC, #F433AB);
 }
 
 .next {
@@ -55,7 +60,19 @@
 }
 
 #sidebar2 {
-  top: 135px;
+  top: 150px;
+}
+
+#sidebar3 {
+  top: 200px;
+}
+
+#sidebar4 {
+  top: 250px;
+}
+
+#sidebar5 {
+  top: 300px;
 }
 
 .sidebar:hover {
@@ -71,4 +88,8 @@
 .sidetxt {
   padding-left: 5px;
   float: left;
+}
+
+#badges {
+  margin: auto;
 }

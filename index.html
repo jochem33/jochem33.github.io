@@ -15,31 +15,46 @@
         <img src="pics/about.png" alt="home" class="sideimg"></img>
         <h1 class="sidetxt">About</h1>
       </div>
+      <div class="sidebar" id="sidebar3" onclick="test('an3'); return false;">
+        <img src="pics/clipboard.png" alt="home" class="sideimg"></img>
+        <h1 class="sidetxt">Projects</h1>
+      </div>
+      <div class="sidebar" id="sidebar4" onclick="test('an4'); return false;">
+        <img src="pics/contact.png" alt="home" class="sideimg"></img>
+        <h1 class="sidetxt">Contact</h1>
+      </div>
+      <div class="sidebar" id="sidebar5" onclick="test('an5'); return false;">
+        <img src="pics/badge.png" alt="home" class="sideimg"></img>
+        <h1 class="sidetxt">Badges</h1>
+      </div>
     </div>
     <a id="an1">
     <div class="bodiv">
       <div class="paginas" id="page1">
-        <h1 class="menutitelbo">Jochem Baas</h1>
+        <h1 class="titel">Jochem Baas</h1>
         <button onclick="test('an2'); return false;" class="next">next</button>
       </div>
       <a id="an2">
       <div class="paginas" id="page2">
-        <h1>about</h1>
+        <h1 class="titel">About</h1>
         <button onclick="test('an3'); return false;" class="next">next</button>
       </div>
       <a id="an3">
       <div class="paginas" id="page3">
-        <h1>projects</h1>
+        <h1 class="titel">Projects</h1>
         <button onclick="test('an4'); return false;" class="next">next</button>
       </div>
       <a id="an4">
       <div class="paginas" id="page4">
-        <h1>Contact</h1>
+        <h1 class="titel">Contact</h1>
         <button onclick="test('an5'); return false;" class="next">next</button>
       </div>
       <a id="an5">
       <div class="paginas" id="page5">
-        <h1>?</h1>
+        <h1 class="titel">Badges</h1>
+        <div id="badges">
+          <iframe src="https://infvoplein.nl:8000/user/2246731" frameborder="0" width="80%" height="500px"></iframe>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>

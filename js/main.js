@@ -16,6 +16,8 @@ page4.style.height = hoog + "px";
 var page5 = document.getElementById('page5');
 page5.style.height = hoog + "px";
 
+var badges = document.getElementById('badges');
+badges.style.maxheight = hoog + "px";
 
 function scrollTo(to, duration) {
     if (document.body.scrollTop == to) return;
