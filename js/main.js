@@ -8,6 +8,17 @@ function wait(ms){
 
 var scroll = 1;
 
+window.onscroll = function (e) {
+  var scrollpos1 = document.documentElement.scrollTop;
+  wait(5);
+  var scrollpos2 = document.documentElement.scrollTop;
+  if(scrollpos1 > scrollpos2) {
+    alert("down")
+  } else if (scrollpos1 < scrollpos2) {
+    alert("up");
+  }
+}
+
 //scroll++;
 //test("an" + scroll);
 
