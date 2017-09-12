@@ -42,7 +42,7 @@
   color: white;
   border-radius: 7px;
   font-size: 20px;
-  
+
 }
 
 .sidebar {
@@ -89,4 +89,8 @@
 
 #badges {
   margin: auto;
+}
+
+.backgroundimage {
+  background-image: url("https://static.pexels.com/photos/55787/pexels-photo-55787.jpeg");
 }
