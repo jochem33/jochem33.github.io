@@ -6,3 +6,17 @@
 .backgroundimage {
   background-image: url("https://static.pexels.com/photos/17679/pexels-photo.jpg");
 }
+
+.art {
+    background-color: white;
+    box-shadow: 1px 1px 1px #000000;
+    transition: 0.2s;
+    padding: 10px;
+    margin: 5px;
+    width: 40%;
+    float: left;
+}
+
+.art:hover {
+    box-shadow: 5px 5px 5px #000000;
+}
