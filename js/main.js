@@ -37,17 +37,26 @@ page5.style.height = hoog + "px";
 var badges = document.getElementById('badges');
 badges.style.maxheight = hoog + "px";
 
+function style(elm) {
+  var elm2 = document.getElementById(elm);
+  elm2.style.overflow-y = "";
+  elm2.sty;
+
+}
+
+
 function scrollTo(to, duration) {
     if (document.body.scrollTop == to) return;
     var diff = to - document.body.scrollTop;
     var scrollStep = Math.PI / (duration / 10);
     var count = 0, currPos;
-    start = element.scrollTop;
+    start = window.pageYOffset;
     scrollInterval = setInterval(function(){
         if (document.body.scrollTop != to) {
             count = count + 1;
             currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
             document.body.scrollTop = currPos;
+            console.log("scrolling");
         }
         else { clearInterval(scrollInterval); }
     },10);
@@ -57,4 +66,19 @@ function test(elID)
 {
     var dest = document.getElementById(elID);
     scrollTo(dest.offsetTop, 500);
+}
+
+var koek = document.getElementById('koek');
+var koekask = localStorage.getItem("cookies");
+console.log(koekask);
+
+if(koekask = null) {
+  koek.style.display = "block";
+} else {
+  koek.style.display = "none";
+}
+
+function cookies() {
+  koek.style.display = "none";
+  localStorage.setItem("cookies", "yes");
 }
