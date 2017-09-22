@@ -1,27 +1,3 @@
-function wait(ms){
-   var start = new Date().getTime();
-   var end = start;
-   while(end < start + ms) {
-     end = new Date().getTime();
-  }
-}
-
-var scroll = 1;
-
-window.onscroll = function (e) {
-  var scrollpos1 = document.documentElement.scrollTop;
-  wait(5);
-  var scrollpos2 = document.documentElement.scrollTop;
-  if(scrollpos1 > scrollpos2) {
-    alert("down")
-  } else if (scrollpos1 < scrollpos2) {
-    alert("up");
-  }
-}
-
-//scroll++;
-//test("an" + scroll);
-
 var hoog = window.innerHeight;
 var page1 = document.getElementById('page1');
 page1.style.height = hoog + "px";
@@ -39,9 +15,6 @@ badges.style.maxheight = hoog + "px";
 
 function style(elm) {
   var elm2 = document.getElementById(elm);
-  elm2.style.overflow-y = "";
-  elm2.sty;
-
 }
 
 
