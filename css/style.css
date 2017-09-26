@@ -114,8 +114,12 @@
   float: left;
 }
 
-#badges, .badge {
-  margin: auto;
+.badges, .container{
+  display: flex;
+  justify-content: space-around;
+}
+.badge {
+
 }
 
 .backgroundimage {

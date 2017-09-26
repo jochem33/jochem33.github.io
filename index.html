@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body id="body">
-    <div id="koek">
+    <section id="koek">
       <h1>Cookies!</h1>
       <p>this site uses cookies and local storage to optimalize user experience</p>
       <button onclick="cookies();" class="next">Ok!</button>
-    </div>
-    <div id="sidebar">
+    </section>
+    <nav id="sidebar">
       <div class="sidebar" id="sidebar1" onclick="test('an1'); return false;">
         <img src="pics/home.png" alt="home" class="sideimg"></img>
         <h1 class="sidetxt">Home</h1>
@@ -26,18 +26,23 @@
         <h1 class="sidetxt">Projects</h1>
       </div>
       <div class="sidebar" id="sidebar4" onclick="test('an4'); return false;">
-        <img src="pics/contact.png" alt="home" class="sideimg"></img>
-        <h1 class="sidetxt">Contact</h1>
-      </div>
-      <div class="sidebar" id="sidebar5" onclick="test('an5'); return false;">
         <img src="pics/badge.png" alt="home" class="sideimg"></img>
         <h1 class="sidetxt">Badges</h1>
       </div>
-    </div>
+      <div class="sidebar" id="sidebar5" onclick="test('an5'); return false;">
+        <img src="pics/contact.png" alt="home" class="sideimg"></img>
+        <h1 class="sidetxt">Contact</h1>
+      </div>
+    </nav>
     <a id="an1">
-    <div id="bodiv">
+    <section id="bodiv">
       <div class="paginas" id="page1">
         <h1 class="titel">Jochem Baas</h1>
+        <article class="blokjes">
+          <div id="blok1">
+            
+          </div>
+        </article>
         <button onclick="test('an2'); return false;" class="next">next</button>
       </div>
       <a id="an2">
@@ -52,17 +57,17 @@
       </div>
       <a id="an4">
       <div class="paginas" id="page4">
-        <h1 class="titel">Contact</h1>
-        <button onclick="test('an5'); return false;" class="next">next</button>
-      </div>
-      <a id="an5">
-      <div class="paginas" id="page5">
         <h1 class="titel">Badges</h1>
         <div id="badges">
           <iframe src="https://infvoplein.nl:8000/user/2246731" frameborder="0" width="80%" height="500px"></iframe>
+          <button onclick="test('an5'); return false;" class="next">next</button>
         </div>
       </div>
-    </div>
+      <a id="an5">
+      <div class="paginas" id="page5">
+        <h1 class="titel">Contact</h1>
+      </div>
+    </section>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
