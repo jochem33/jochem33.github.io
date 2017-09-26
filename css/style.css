@@ -30,7 +30,6 @@
 }
 
 #bodiv {
-  overflow-y: scroll;
   height: 100vh;
   -ms-scroll-snap-points-y: snapInterval(0, 100vh);
   -ms-scroll-snap-type: mandatory;

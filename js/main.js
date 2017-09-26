@@ -1,3 +1,11 @@
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+
 var hoog = window.innerHeight;
 var page1 = document.getElementById('page1');
 page1.style.height = hoog + "px";
@@ -13,12 +21,16 @@ page5.style.height = hoog + "px";
 var badges = document.getElementById('badges');
 badges.style.maxheight = hoog + "px";
 
-function style(elm) {
-  var elm2 = document.getElementById(elm);
+if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+  var elm2 = document.getElementById("bodiv");
+  elm2.style.overflow = "scroll";
 }
 
 
 function scrollTo(to, duration) {
+    var elm2 = document.getElementById("bodiv");
+    elm2.style.overflow = "visible";
+    wait(100);
     if (document.body.scrollTop == to) return;
     var diff = to - document.body.scrollTop;
     var scrollStep = Math.PI / (duration / 10);
@@ -32,13 +44,15 @@ function scrollTo(to, duration) {
             console.log("scrolling");
         }
         else { clearInterval(scrollInterval); }
+        var elm2 = document.getElementById("bodiv");
+        elm2.style.overflow = "scroll";
     },10);
 }
 
 function test(elID)
 {
-    var dest = document.getElementById(elID);
-    scrollTo(dest.offsetTop, 500);
+  var dest = document.getElementById(elID);
+  scrollTo(dest.offsetTop, 500);
 }
 
 var koek = document.getElementById('koek');
