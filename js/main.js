@@ -26,9 +26,8 @@ function scrollTo(to, duration) {
   if(ff == 1){
     var elm2 = document.getElementById("bodiv");
     elm2.style.removeProperty('overflow');
-
+    wait(100);
   }
-  wait(1000);
   if (document.body.scrollTop == to) return;
   var diff = to - document.body.scrollTop;
   var scrollStep = Math.PI / (duration / 10);
@@ -43,6 +42,7 @@ function scrollTo(to, duration) {
     }
     else { clearInterval(scrollInterval); }
     if(ff == 1){
+      wait(100);
       var elm2 = document.getElementById("bodiv");
       elm2.style.overflow = "scroll";
     }
