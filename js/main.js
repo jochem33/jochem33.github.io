@@ -21,16 +21,6 @@ page5.style.height = hoog + "px";
 var badges = document.getElementById('badges');
 badges.style.maxheight = hoog + "px";
 
-var ff = 0;
-
-var vuurvos = navigator.userAgent.search("Firefox");
-
-if (confirm("Click ok if you use firefox!") == true) {
-  var elm2 = document.getElementById("bodiv");
-  elm2.style.overflow = "scroll";
-  ff = 1;
-}
-
 
 function scrollTo(to, duration) {
   if(ff == 1){
@@ -78,4 +68,14 @@ if(koekask = null) {
 function cookies() {
   koek.style.display = "none";
   localStorage.setItem("cookies", "yes");
+}
+
+var ff = 0;
+
+var vuurvos = navigator.userAgent.search("Firefox");
+
+if (confirm("Click ok if you use firefox!") == true) {
+  var elm2 = document.getElementById("bodiv");
+  elm2.style.overflow = "scroll";
+  ff = 1;
 }
