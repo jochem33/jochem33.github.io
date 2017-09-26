@@ -21,32 +21,42 @@ page5.style.height = hoog + "px";
 var badges = document.getElementById('badges');
 badges.style.maxheight = hoog + "px";
 
-if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+var ff = 0;
+
+var vuurvos = navigator.userAgent.search("Firefox");
+
+if (confirm("Click ok if you use firefox!") == true) {
   var elm2 = document.getElementById("bodiv");
   elm2.style.overflow = "scroll";
+  ff = 1;
 }
 
 
 function scrollTo(to, duration) {
+  if(ff == 1){
     var elm2 = document.getElementById("bodiv");
-    elm2.style.overflow = "visible";
-    wait(100);
-    if (document.body.scrollTop == to) return;
-    var diff = to - document.body.scrollTop;
-    var scrollStep = Math.PI / (duration / 10);
-    var count = 0, currPos;
-    start = window.pageYOffset;
-    scrollInterval = setInterval(function(){
-        if (document.body.scrollTop != to) {
-            count = count + 1;
-            currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
-            document.body.scrollTop = currPos;
-            console.log("scrolling");
-        }
-        else { clearInterval(scrollInterval); }
-        var elm2 = document.getElementById("bodiv");
-        elm2.style.overflow = "scroll";
-    },10);
+    elm2.style.removeProperty('overflow');
+
+  }
+  wait(1000);
+  if (document.body.scrollTop == to) return;
+  var diff = to - document.body.scrollTop;
+  var scrollStep = Math.PI / (duration / 10);
+  var count = 0, currPos;
+  start = window.pageYOffset;
+  scrollInterval = setInterval(function(){
+    if (document.body.scrollTop != to) {
+      count = count + 1;
+      currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+      document.body.scrollTop = currPos;
+      console.log("scrolling");
+    }
+    else { clearInterval(scrollInterval); }
+    if(ff == 1){
+      var elm2 = document.getElementById("bodiv");
+      elm2.style.overflow = "scroll";
+    }
+  },10);
 }
 
 function test(elID)
