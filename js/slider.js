@@ -1,7 +1,10 @@
-var p1 = document.getElementById("pl1");
-var p2 = document.getElementById("pl2");
-var p3 = document.getElementById("pl3");
+var pagina = document.getElementById("page1");
 console.log("Wat kijk je in de console?!");
+var hoog = window.innerHeight;
+var breed = window.innerWidth;
+pagina.style.height = hoog + "px";
+page1.style.width = hoog + "px";
+
 auto();
 function ga() {
     while (true) {
@@ -36,20 +39,13 @@ function rel() {
     console.log("plt: " + plt);
     switch (plt) {
         case 1:
-            console.log("plt is 1 dus we doen sappige dingen")
-            p1.style.display = "block";
-            p2.style.display = "none";
-            p3.style.display = "none";
+            pagina.style.backgroundImage = "url('pics/presentatie.png')";
             break;
         case 2:
-            p1.style.display = "none";
-            p2.style.display = "block";
-            p3.style.display = "none";
+            pagina.style.backgroundImage = "url('pics/japan.png')";
             break;
         case 3:
-            p1.style.display = "none";
-            p2.style.display = "none";
-            p3.style.display = "block";
+            pagina.style.backgroundImage = "url('pics/presentatie.png')";
             break;
 
         default:
@@ -63,19 +59,13 @@ function auto() {
     console.log("plt: " + plt);
     switch (plt) {
         case 1:
-            p1.style.display = "block";
-            p2.style.display = "none";
-            p3.style.display = "none";
+            pagina.style.backgroundImage = "url('pics/presentatie.png')";
             break;
         case 2:
-            p1.style.display = "none";
-            p2.style.display = "block";
-            p3.style.display = "none";
+            pagina.style.backgroundImage = "url('pics/japan.png')";
             break;
         case 3:
-            p1.style.display = "none";
-            p2.style.display = "none";
-            p3.style.display = "block";
+            pagina.style.backgroundImage = "url('pics/presentatie.png')";
             break;
 
         default:
