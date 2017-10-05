@@ -8,6 +8,11 @@
   font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #koek {
   position: fixed;
   display: block;
@@ -120,6 +125,16 @@
 }
 .badge {
 
+}
+
+.blokjes {
+  background-color: #d8d8d8;
+  padding: 30px;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #8e8d8d;
 }
 
 .backgroundimage {
