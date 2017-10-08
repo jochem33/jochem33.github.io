@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 * {
   padding: 0;
@@ -48,8 +49,33 @@ a {
   padding: 10px;
 }
 
+.titel1 {
+  font-family: 'Orbitron', Roboto, "Roboto Mono", Comfortaa, Calibri;
+  font-size: 120px;
+  padding-top: 120px;
+  text-shadow: 2px 2px #ff0000;
+  text-shadow:
+    -1px -1px 0 #ff0000,
+    1px -1px 0 #ff0000,
+    -1px 1px 0 #ff0000,
+    1px 1px 0 #ff0000;
+}
+
+.aboutme {
+  color: white;
+}
+
+.aboutlink {
+  color: #777777;
+}
+
 #page1 {
   background: linear-gradient(to right, #14e5d4, #119be0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background-image 2s ease-in-out;
+  transition: background-image 1s ease-in-out;
 }
 
 #page2 {
@@ -128,7 +154,7 @@ a {
 }
 
 .blokjes {
-  background-color: #d8d8d8;
+  background-color: #b5b3b3;
   padding: 30px;
   width: 60%;
   margin: auto;

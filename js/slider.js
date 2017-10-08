@@ -1,9 +1,9 @@
 var pagina = document.getElementById("page1");
 console.log("Wat kijk je in de console?!");
 var hoog = window.innerHeight;
-var breed = window.innerWidth;
+/*var breed = window.innerWidth;*/
 pagina.style.height = hoog + "px";
-page1.style.width = hoog + "px";
+/*page1.style.width = hoog + "px";*/
 
 auto();
 function ga() {
@@ -71,5 +71,5 @@ function auto() {
         default:
             plt = 0;
     }
-    setTimeout(auto, 1500);
+    setTimeout(auto, 3000);
 }
