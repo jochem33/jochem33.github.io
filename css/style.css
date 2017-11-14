@@ -69,6 +69,27 @@ a {
   color: #777777;
 }
 
+.contactme {
+  color: white;
+}
+
+.contactlink {
+  color: white;
+  font-size: 20px;
+}
+
+.contactimg {
+  width: 50px;
+  margin: 10px;
+  position: relative;
+  top: 25px;
+}
+
+.list {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 #page1 {
   background: linear-gradient(to right, #14e5d4, #119be0);
   background-position: center;
