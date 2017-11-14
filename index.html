@@ -38,16 +38,16 @@
     <section id="bodiv">
       <div class="paginas" id="page1">
         <h1 class="titel1">Jochem Baas</h1>
-        <img onclick="test('an2'); return false;" src="pics/arrow.gif" width="200px"></img>
+        <button class="next2"><img onclick="test('an2'); return false;" src="pics/arrow.gif" width="200px"></img></button>
         <!--<button onclick="test('an2'); return false;" class="next"></button>-->
       </div>
       <a id="an2">
       <div class="paginas" id="page2">
         <h1 class="titel">About</h1>
         <article class="blokjes">
-          <div id="blok1">
+          <div>
             <h1>About me</h1>
-            <p class="aboutme">I'm a student at the Metis <a class="aboutlink" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. </p>
+            <p class="aboutme">I'm a student at the Metis <a class="aboutlink" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <ins class="aboutlink" onclick="test('an4'); return false;">badges</ins> page. </p>
           </div>
         </article>
         <button onclick="test('an3'); return false;" class="next">next</button>
@@ -55,7 +55,30 @@
       <a id="an3">
       <div class="paginas" id="page3">
         <h1 class="titel">Projects</h1>
-        <button onclick="test('an4'); return false;" class="next">next</button>
+        <article class="blokjes2">
+          <div id="blok1">
+            <h1>Blender Speaks Syria</h1>
+            <a href="https://www.youtube.com/watch?v=e4LT4R_Tc0M"><img class="projectimg" src="pics/blender.png"></img>
+            <p class="aboutme">In the Blender Speaks Syria project we made an animation about childs in Syria.</p>
+          </div>
+        </article>
+        <article class="blokjes2">
+          <div id="blok1">
+            <h1>Philips Hue</h1>
+            <a href="https://www.youtube.com/watch?v=e4LT4R_Tc0M"><img class="projectimg" src="pics/hue.png"></img>
+            <p class="aboutme">In this project we made a website where you can control your Philips Hue Lamps.</p>
+          </div>
+        </article>
+        <article class="blokjes2">
+          <div id="blok1">
+            <h1>Tank Game</h1>
+            <a href=""><img class="projectimg" src="pics/tank.png"></img>
+            <p class="aboutme">We are currently working on a game in p5 with tanks.</p>
+            <br>
+          </div>
+        </article>
+        <br><br>
+        <button onclick="test('an4'); return false;" class="next1">next</button>
       </div>
       <a id="an4">
       <div class="paginas" id="page4">

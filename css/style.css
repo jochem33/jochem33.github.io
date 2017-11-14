@@ -85,6 +85,10 @@ a {
   top: 25px;
 }
 
+.projectimg {
+  width: 100%;
+}
+
 .list {
   text-decoration: none;
   list-style-type: none;
@@ -122,6 +126,20 @@ a {
   border-radius: 7px;
   font-size: 20px;
   bottom: 40px;
+}
+
+.next1 {
+  background: linear-gradient(to right, #ff0000, #ff8c00);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  font-size: 20px;
+  bottom: 40px;
+  position: relative;
+}
+
+.next2 {
+  background-color: transparent;
 }
 
 .sidebar {
@@ -182,6 +200,22 @@ a {
   margin-top: 40px;
   margin-bottom: 30px;
   color: #8e8d8d;
+}
+
+.blokjes2 {
+  background: linear-gradient(to right, #14e5d4, #119be0);
+  display: inline-block;
+  margin: 20px;
+  width: 20%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #8e8d8d;
+  padding: 10px;
+}
+
+.blok1 {
+  margin: 0;
+  width: 20%
 }
 
 .backgroundimage {
