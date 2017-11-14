@@ -66,7 +66,8 @@ a {
 }
 
 .aboutlink {
-  color: #777777;
+  color: white;
+  text-decoration: underline;
 }
 
 .contactme {
@@ -87,6 +88,7 @@ a {
 
 .projectimg {
   width: 100%;
+  max-height: 170px;
 }
 
 .list {
@@ -125,7 +127,6 @@ a {
   color: white;
   border-radius: 7px;
   font-size: 20px;
-  bottom: 40px;
 }
 
 .next1 {
@@ -134,7 +135,7 @@ a {
   color: white;
   border-radius: 7px;
   font-size: 20px;
-  bottom: 40px;
+  bottom: 30px;
   position: relative;
 }
 
@@ -193,22 +194,22 @@ a {
 }
 
 .blokjes {
-  background-color: #b5b3b3;
+  background: linear-gradient(to right, #ff0000, #ff8c00);
   padding: 30px;
   width: 60%;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 30px;
   color: #8e8d8d;
+  border-radius: 20px;
 }
 
 .blokjes2 {
   background: linear-gradient(to right, #14e5d4, #119be0);
   display: inline-block;
   margin: 20px;
-  width: 20%;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  width: 25%;
+  margin-top: 20px;
   color: #8e8d8d;
   padding: 10px;
 }

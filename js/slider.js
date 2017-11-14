@@ -42,10 +42,10 @@ function rel() {
             pagina.style.backgroundImage = "url('pics/presentatie.png')";
             break;
         case 2:
-            pagina.style.backgroundImage = "url('pics/japan.png')";
+            pagina.style.backgroundImage = "url('pics/fll.png')";
             break;
         case 3:
-            pagina.style.backgroundImage = "url('pics/presentatie.png')";
+            pagina.style.backgroundImage = "url('pics/japan.png')";
             break;
 
         default:
@@ -65,7 +65,7 @@ function auto() {
             pagina.style.backgroundImage = "url('pics/japan.png')";
             break;
         case 3:
-            pagina.style.backgroundImage = "url('pics/presentatie.png')";
+            pagina.style.backgroundImage = "url('pics/fll.png')";
             break;
 
         default:
