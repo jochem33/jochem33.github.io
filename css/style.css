@@ -106,7 +106,8 @@ a {
 }
 
 #page2 {
-  background: linear-gradient(to left, #ff0094, #ff3b00);
+  /*background: linear-gradient(to left, #ff0094, #ff3b00);*/
+  background-color: white;
 }
 
 #page3 {
