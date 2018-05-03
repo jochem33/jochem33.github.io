@@ -44,3 +44,12 @@ function test(elID)
   var dest = document.getElementById(elID);
   scrollTo(dest.offsetTop, 500);
 }
+
+$('#fullpage').fullpage({
+  anchors: ['pag1', 'pag2', 'pag3', 'pag4', 'pag5'],
+  //sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+});
+
+$(document).ready(function() {
+	$('#fullpage').fullpage();
+});

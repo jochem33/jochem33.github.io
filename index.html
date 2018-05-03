@@ -1,127 +1,102 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Jochem Baas</title>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<title>Jochem Baas</title>
+  	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  	<script type="text/javascript" src="js/examples.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+  			$('#fullpage').fullpage({
+  				//sectionsColor: ['#000000', '#000000', '#000000', '#000000', '#000000'],
+  				anchors: ['pagina1', 'pagina2', 'pagina3', 'pagina4', 'pagina5'],
+  				menu: '#menu',
+  				scrollingSpeed: 1000
+  			});
+
+  		});
+  	</script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
-  <body id="body">
-    <!-- <section id="koek">
-      <h1>Cookies!</h1>
-      <p>this site uses cookies and local storage to optimalize user experience</p>
-      <button onclick="cookies();" class="next">Ok!</button>
-    </section> -->
-    <nav id="sidebar">
-      <div class="sidebar" id="sidebar1" onclick="test('an1'); return false;">
-        <img src="pics/home.png" alt="home" class="sideimg"></img>
-        <h1 class="sidetxt">Home</h1>
+  <body>
+
+  <!--
+  <ul id="menu">
+  	<li data-menuanchor="pagina1"><a href="#pagina1">First slide</a></li>
+  	<li data-menuanchor="pagina2"><a href="#pagina2">Second slide</a></li>
+  	<li data-menuanchor="pagina3"><a href="#pagina3">Third slide</a></li>
+  	<li data-menuanchor="pagina4"><a href="#pagina4">Fourth slide</a></li>
+  </ul>-->
+
+  <nav id="sidebar">
+    <a class="sidebar" id="sidebar1" href="#pagina1" data-menuanchor="pagina1">
+      <img src="pics/home.png" alt="home" class="sideimg"></img>
+      <h1 class="sidetxt">Home</h1>
+    </a>
+    <a class="sidebar" id="sidebar2" href="#pagina2" data-menuanchor="pagina2">
+      <img src="pics/about.png" alt="home" class="sideimg"></img>
+      <h1 class="sidetxt">About</h1>
+    </a>
+    <a class="sidebar" id="sidebar3" href="pagina3" data-menuanchor="pagina3">
+      <img src="pics/clipboard.png" alt="home" class="sideimg"></img>
+      <h1 class="sidetxt">Projects</h1>
+    </a>
+    <a class="sidebar" id="sidebar4" href="pagina4" data-menuanchor="pagina4">
+      <img src="pics/badge.png" alt="home" class="sideimg"></img>
+      <h1 class="sidetxt">Badges</h1>
+    </a>
+  </nav>
+
+
+  <div id="fullpage">
+  	<div class="section " id="section0">
+  		<h1 class="titel1">Jochem Baas</h1>
+
+      <a data-menuanchor="2thpage" href="#pagina2"><img src="pics/arrow.gif" width="200px"></img></a>
+  	</div>
+
+    <div class="section" id="section1">
+      <h1 class="titel1">About</h1>
+      <article>
+          <p>I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <a class="link" href="pagina4"></a> page. </p>
+      </article>
+    </div>
+
+    <div class="section" id="section2">
+      <h1 class="titel1">Projects</h1>
+      <article>
+          <p>This page is in development.</p>
+      </article>
+  	</div>
+
+  	<div class="section" id="section3">
+      <h1 class="titel1">Badges</h1>
+      <div id="badges">
+        <iframe src="https://infvoplein.nl:8000/user/2246731" frameborder="0" width="80%" height="500px"></iframe>
       </div>
-      <div class="sidebar" id="sidebar2" onclick="test('an2'); return false;">
-        <img src="pics/about.png" alt="home" class="sideimg"></img>
-        <h1 class="sidetxt">About</h1>
-      </div>
-      <div class="sidebar" id="sidebar3" onclick="test('an3'); return false;">
-        <img src="pics/clipboard.png" alt="home" class="sideimg"></img>
-        <h1 class="sidetxt">Projects</h1>
-      </div>
-      <div class="sidebar" id="sidebar4" onclick="test('an4'); return false;">
-        <img src="pics/badge.png" alt="home" class="sideimg"></img>
-        <h1 class="sidetxt">Badges</h1>
-      </div>
-      <div class="sidebar" id="sidebar5" onclick="test('an5'); return false;">
-        <img src="pics/contact.png" alt="home" class="sideimg"></img>
-        <h1 class="sidetxt">Contact</h1>
-      </div>
-    </nav>
-    <a id="an1">
-    <section id="bodiv">
-      <div class="paginas" id="page1">
-        <h1 class="titel1">Jochem Baas</h1>
-        <button class="next2"><img onclick="test('an2'); return false;" src="pics/arrow.gif" width="200px"></img></button>
-        <!--<button onclick="test('an2'); return false;" class="next"></button>-->
-      </div>
-      <a id="an2">
-      <div class="paginas" id="page2">
-        <h1 class="titel">About</h1>
-        <article class="blokjes">
-          <div>
-            <h1>About me</h1>
-            <p class="aboutme">I'm a student at the Metis <a class="aboutlink" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <ins class="aboutlink" onclick="test('an4'); return false;">badges</ins> page. </p>
-          </div>
-        </article>
-        <button onclick="test('an3'); return false;" class="next">next</button>
-      </div>
-      <a id="an3">
-      <div class="paginas" id="page3">
-        <h1 class="titel">Projects</h1>
-        <article class="blokjes2">
-          <div id="blok1">
-            <h1>Blender Speaks Syria</h1>
-            <a href="https://www.youtube.com/watch?v=e4LT4R_Tc0M"><img class="projectimg" src="pics/blender.png"></img>
-            <p class="aboutme">In the Blender Speaks Syria project we made an animation about childs in Syria.</p>
-          </div>
-        </article>
-        <article class="blokjes2">
-          <div id="blok1">
-            <h1>Philips Hue</h1>
-            <a href="https://www.youtube.com/watch?v=e4LT4R_Tc0M"><img class="projectimg" src="pics/hue.png"></img>
-            <p class="aboutme">In this project we made a website where you can control your Philips Hue Lamps.</p>
-          </div>
-        </article>
-        <article class="blokjes2">
-          <div id="blok1">
-            <h1>Tank Game</h1>
-            <a href=""><img class="projectimg" src="pics/tank.png"></img>
-            <p class="aboutme">We are currently working on a game in p5 with tanks.</p>
-            <br>
-          </div>
-        </article>
-        <article class="blokjes2">
-          <div id="blok1">
-            <h1>Japan</h1>
-            <a href="https://www.youtube.com/watch?v=e4LT4R_Tc0M"><img class="projectimg" src="pics/japan.png"></img>
-            <p class="aboutme">With the robotics club I went to Japan to participate in the World Robot Summit.</p>
-          </div>
-        </article>
-        <article class="blokjes2">
-          <div id="blok1">
-            <h1>First Lego League</h1>
-            <a href="https://www.youtube.com/watch?v=e4LT4R_Tc0M"><img class="projectimg" src="http://blog.ocg.at/wp-content/uploads/2017/10/FIRST-FLL-HYDRO-DYNAMICS17-Color-3e92235f.jpg"></img>
-            <p class="aboutme">With the robotics club we also participated in First Lego League 2016 and 2017.</p>
-          </div>
-        </article>
-        <br><br>
-        <button onclick="test('an4'); return false;" class="next1">next</button>
-      </div>
-      <a id="an4">
-      <div class="paginas" id="page4">
-        <h1 class="titel">Badges</h1>
-        <div id="badges">
-          <iframe src="https://infvoplein.nl:8000/user/2246731" frameborder="0" width="80%" height="500px"></iframe>
-          <button onclick="test('an5'); return false;" class="next">next</button>
-        </div>
-      </div>
-      <a id="an5">
-      <div class="paginas" id="page5">
-        <h1 class="titel">Contact</h1>
-        <article class="blokjes">
-          <div id="blok2">
-            <h1>About me</h1>
-            <p class="aboutme">If you like to contact me you can use one of the next ways:</p> <br>
-            <ul class="list">
-              <li>
-                <a class="contactlink" href="https://twitter.com/JochemDeBaas"><img class="contactimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"> Twitter</a>
-              </li>
-              <li>
-                <a class="contactlink" href="https://www.instagram.com/jochembaas_official/"> <img class="contactimg" src="http://pngimg.com/uploads/instagram/instagram_PNG10.png"> Instagram</a>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
+  	</div>
+
+  	<div class="section" id="section4">
+      <h1 class="titel1">Contact</h1>
+      <article>
+          <ul class="tekstvak">
+            <li>
+              <a href="https://twitter.com/JochemDeBaas"><img class="contactimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"> Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jochembaas_official/"> <img class="contactimg" src="http://pngimg.com/uploads/instagram/instagram_PNG10.png"> Instagram</a>
+            </li>
+          </ul>
+      </article>
+  	</div>
+
+  </div>
+  <script type="text/javascript" src="js/slider2.js"></script>
   </body>
 </html>

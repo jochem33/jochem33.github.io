@@ -1,6 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
+#blenderslide {
+  background-image: url("pics/blender.png");
+}
+
+.tekstvak {
+  font-family: 'Orbitron', Roboto, "Roboto Mono", Comfortaa, Calibri;
+  background-color: white;
+  margin: auto;
+  /*background-color: #d6d6d6;*/
+  padding: 50px;
+  box-shadow: 5px 10px;
+  width: 50%;
+  color: black;
+  list-style-type: none;
+
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.contactimg {
+  width: 40px;
+}
+
+.section{
+	text-align:center;
+}
+
+#section1 {
+  background: linear-gradient(to bottom, #00EDFF, #28B0EB);
+}
+
+#section2 {
+  background: linear-gradient(to bottom, #28B0EB, #7676F5);
+}
+
+#section3 {
+  background: linear-gradient(to bottom, #7676F5, #28B0EB);
+}
+
+#section4 {
+  background: linear-gradient(to bottom, #28B0EB, #F2A1A1);
+}
+
 * {
   padding: 0;
   border: 0;
@@ -11,9 +54,9 @@
 
 a {
   text-decoration: none;
-  color: white;
 }
 
+/*
 #koek {
   position: fixed;
   display: block;
@@ -26,76 +69,42 @@ a {
   text-align: center;
   padding: 50px;
   border: 1px solid white;
-}
+}*/
 
-.paginas {
-  width: 100%;
-  color: white;
-  text-align: center;
-  scroll-snap-align: none start;
-}
 
-#bodiv {
-  height: 100vh;
-  -ms-scroll-snap-points-y: snapInterval(0, 100vh);
-  -ms-scroll-snap-type: mandatory;
-  -webkit-snap-points-y: repeat(100vh);
-  -webkit-scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: mandatory;
-}
+
 
 .titel {
+  color: black;
   padding: 10px;
 }
 
 .titel1 {
   font-family: 'Orbitron', Roboto, "Roboto Mono", Comfortaa, Calibri;
   font-size: 120px;
-  padding-top: 120px;
+  /*padding-top: 5%;*/
   text-shadow: 2px 2px #ff0000;
   text-shadow:
     -1px -1px 0 #ff0000,
     1px -1px 0 #ff0000,
     -1px 1px 0 #ff0000,
     1px 1px 0 #ff0000;
-}
-
-.aboutme {
   color: white;
 }
 
-.aboutlink {
-  color: white;
-  text-decoration: underline;
-}
-
-.contactme {
-  color: white;
-}
-
-.contactlink {
-  color: white;
-  font-size: 20px;
-}
-
-.contactimg {
-  width: 50px;
-  margin: 10px;
-  position: relative;
-  top: 25px;
-}
-
-.projectimg {
+/*#bodiv {
+  height: 100%;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
   width: 100%;
-  max-height: 170px;
-}
+  overflow: auto;
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+  scroll-snap-points-y: repeat(100%);
+}*/
 
-.list {
-  text-decoration: none;
-  list-style-type: none;
-}
-
+/*
 #page1 {
   background: linear-gradient(to right, #14e5d4, #119be0);
   background-position: center;
@@ -106,21 +115,30 @@ a {
 }
 
 #page2 {
-  /*background: linear-gradient(to left, #ff0094, #ff3b00);*/
-  background-color: white;
+  commentaar dit: background: linear-gradient(to left, #ff0094, #ff3b00);
+  background: linear-gradient(to bottom, #e900ff, #ff1500);
 }
 
 #page3 {
-  background: linear-gradient(to left, #e900ff, #119be0);
+  background: linear-gradient(to bottom, #ff1500, #e900ff);
 }
 
 #page4 {
-  background: linear-gradient(to right, #00ff72, #119be0);
+  background: linear-gradient(to bottom, #e900ff, #A300CC);
 }
 
 #page5 {
-  background: linear-gradient(to left, #A300CC, #F433AB);
+  background: linear-gradient(to bottom, #A300CC, #F433AB);
 }
+
+/*voor alle paginas*/
+.paginas {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}*/
 
 .next {
   background: linear-gradient(to right, #ff0000, #ff8c00);
@@ -194,6 +212,7 @@ a {
 
 }
 
+/*
 .blokjes {
   background: linear-gradient(to right, #ff0000, #ff8c00);
   padding: 30px;
@@ -218,8 +237,8 @@ a {
 .blok1 {
   margin: 0;
   width: 20%
-}
+}*/
 
-.backgroundimage {
+/*.backgroundimage {
   background-image: url("https://static.pexels.com/photos/17679/pexels-photo.jpg");
-}
+}*/
