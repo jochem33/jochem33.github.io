@@ -56,21 +56,6 @@ a {
   text-decoration: none;
 }
 
-/*
-#koek {
-  position: fixed;
-  display: block;
-  width: 80%;
-  margin: 8%;
-  border-radius: 40px;
-  height: 200px;
-  margin-top: 70px;
-  background-color: white;
-  text-align: center;
-  padding: 50px;
-  border: 1px solid white;
-}*/
-
 
 
 
@@ -84,52 +69,20 @@ a {
   font-size: 120px;
   /*padding-top: 5%;*/
   text-shadow: 2px 2px #ff0000;
+  /*text-shadow:
+    0px 0px 0 #ff0000,
+    5px 0px 0 #ff0000,
+    0px 5px 0 #ff0000,
+    5px 5px 0 #ff0000;*/
   text-shadow:
-    -1px -1px 0 #ff0000,
-    1px -1px 0 #ff0000,
-    -1px 1px 0 #ff0000,
-    1px 1px 0 #ff0000;
+    5px 5px 0 black,
+    5px 5px 0 black,
+    5px 5px 0 black,
+    5px 5px 0 black;
   color: white;
 }
 
-/*#bodiv {
-  height: 100%;
-  overflow-x: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  overflow: auto;
-  scroll-snap-type: mandatory;
-  scroll-snap-destination: 100% 0%;
-  scroll-snap-points-y: repeat(100%);
-}*/
 
-/*
-#page1 {
-  background: linear-gradient(to right, #14e5d4, #119be0);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: background-image 2s ease-in-out;
-  transition: background-image 1s ease-in-out;
-}
-
-#page2 {
-  commentaar dit: background: linear-gradient(to left, #ff0094, #ff3b00);
-  background: linear-gradient(to bottom, #e900ff, #ff1500);
-}
-
-#page3 {
-  background: linear-gradient(to bottom, #ff1500, #e900ff);
-}
-
-#page4 {
-  background: linear-gradient(to bottom, #e900ff, #A300CC);
-}
-
-#page5 {
-  background: linear-gradient(to bottom, #A300CC, #F433AB);
-}
 
 /*voor alle paginas*/
 .paginas {
@@ -212,33 +165,31 @@ a {
 
 }
 
-/*
-.blokjes {
-  background: linear-gradient(to right, #ff0000, #ff8c00);
-  padding: 30px;
-  width: 60%;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  color: #8e8d8d;
-  border-radius: 20px;
+
+
+
+.hiddentekstvak {
+  margin: 0 10% 0 10%;
+  color: white;
 }
 
-.blokjes2 {
-  background: linear-gradient(to right, #14e5d4, #119be0);
-  display: inline-block;
-  margin: 20px;
-  width: 25%;
-  margin-top: 20px;
-  color: #8e8d8d;
-  padding: 10px;
+.credly__user > div > div {
+  background-color: #222233 !important;
 }
 
-.blok1 {
-  margin: 0;
-  width: 20%
-}*/
+.credly__user a {
+  background-color: #223 !important;
+  width: 100px !important;
+  height: 100px !important;
+  border-color: #223 !important;
+  border-radius: 15px 50px 30px 5px !important;
+}
 
-/*.backgroundimage {
-  background-image: url("https://static.pexels.com/photos/17679/pexels-photo.jpg");
-}*/
+.credly__user a img {
+  width: 75px !important;
+  height: 75px !important;
+}
+
+.credly__user p {
+  color: #223 !important;
+}

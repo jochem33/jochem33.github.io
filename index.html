@@ -24,14 +24,6 @@
   </head>
   <body>
 
-  <!--
-  <ul id="menu">
-  	<li data-menuanchor="pagina1"><a href="#pagina1">First slide</a></li>
-  	<li data-menuanchor="pagina2"><a href="#pagina2">Second slide</a></li>
-  	<li data-menuanchor="pagina3"><a href="#pagina3">Third slide</a></li>
-  	<li data-menuanchor="pagina4"><a href="#pagina4">Fourth slide</a></li>
-  </ul>-->
-
   <nav id="sidebar">
     <a class="sidebar" id="sidebar1" href="#pagina1" data-menuanchor="pagina1">
       <img src="pics/home.png" alt="home" class="sideimg"></img>
@@ -62,20 +54,21 @@
     <div class="section" id="section1">
       <h1 class="titel1">About</h1>
       <article>
-          <p>I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <a class="link" href="pagina4"></a> page. </p>
+          <p class="hiddentekstvak">I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <a class="link" href="#pagina4">badges</a> page. </p>
       </article>
     </div>
 
     <div class="section" id="section2">
       <h1 class="titel1">Projects</h1>
       <article>
-          <p>This page is in development.</p>
+          <p class="hiddentekstvak">This page is in development.</p>
       </article>
   	</div>
 
   	<div class="section" id="section3">
       <h1 class="titel1">Badges</h1>
       <div id="badges">
+        <!-- <script data-type="user" data-id="2246731" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script> -->
         <iframe src="https://infvoplein.nl:8000/user/2246731" frameborder="0" width="80%" height="500px"></iframe>
       </div>
   	</div>
@@ -83,14 +76,24 @@
   	<div class="section" id="section4">
       <h1 class="titel1">Contact</h1>
       <article>
-          <ul class="tekstvak">
-            <li>
-              <a href="https://twitter.com/JochemDeBaas"><img class="contactimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png"> Twitter</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/jochembaas_official/"> <img class="contactimg" src="pics/Instagram.png"> Instagram</a>
-            </li>
-          </ul>
+          <table class="tekstvak">
+            <tr>
+              <td>
+                <img class="contactimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png">
+              </td>
+              <td>
+                <a href="https://twitter.com/JochemDeBaas">Twitter</a>
+              </td>
+            </td>
+            <tr>
+              <td>
+                <img class="contactimg" src="pics/Instagram.png">
+              </td>
+              <td>
+                <a href="https://www.instagram.com/jochembaas_official/"> Instagram</a>
+              </td>
+            </tr>
+          </table>
       </article>
   	</div>
 
