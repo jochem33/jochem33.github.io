@@ -18,10 +18,20 @@
 
   margin-top: 10vh;
   margin-bottom: 10vh;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.smTabel {
+  margin: auto;
+  width: 90%;
+  padding: 5px;
 }
 
 .contactimg {
   width: 40px;
+  vertical-align: middle;
+  padding: 10px;
 }
 
 .section{
@@ -157,32 +167,21 @@ a {
   float: left;
 }
 
-.badges, .container{
-  display: flex;
-  justify-content: space-around;
-}
-.badge {
 
-}
-
-
-
-
-.hiddentekstvak {
-  margin: 0 10% 0 10%;
-  color: white;
-}
 
 .credly__user > div > div {
-  background-color: #222233 !important;
+  background-color: transparent !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-around !important;
+  height: 70vh;
 }
 
 .credly__user a {
-  background-color: #223 !important;
+  /* background-color: #223 !important; */
   width: 100px !important;
   height: 100px !important;
   border-color: #223 !important;
-  border-radius: 15px 50px 30px 5px !important;
 }
 
 .credly__user a img {
@@ -191,5 +190,5 @@ a {
 }
 
 .credly__user p {
-  color: #223 !important;
+  /* color: #223 !important; */
 }
