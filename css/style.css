@@ -193,6 +193,23 @@ a {
   height: 100px !important;
   border: 0px solid blue;
   border-radius: 5px;
+  transition: 1s width !important;
+  transition: 1s height !important;
+  transition: 1s background-color !important;
+  transition: 0s z-index !important;
+  transition: 0s position !important;
+  transition-delay: 4s !important;
+}
+
+.credly__user a:active {
+  background: 0;
+  background-color: rgba(229, 229, 229, 0.95) !important;
+  width: 70vw !important;
+  height: 50vh !important;
+  position: absolute !important;
+  z-index: 100;
+  pointer-events: none;
+  cursor: default;
 }
 
 .credly__user a img {
