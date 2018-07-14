@@ -170,18 +170,29 @@ a {
 
 
 .credly__user > div > div {
-  background-color: transparent !important;
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  justify-content: space-around !important;
+  background-color: #e5e5e550 !important;
   height: 70vh;
+  width: 90vw;
+  margin: auto;
+  display: flex !important;
+  overflow-y: scroll !important;
+}
+
+.credly__user > div > div > div {
+  /* display: box !important; */
+  display: flex !important;
+  justify-content: space-around !important;
+  align-content: space-around !important;
 }
 
 .credly__user a {
-  /* background-color: #223 !important; */
+  box-flex: 1 !important;
+  flex: 1 1 100px !important;
+  background-color: #e5e5e550 !important;
   width: 100px !important;
   height: 100px !important;
-  border-color: #223 !important;
+  border: 0px solid blue;
+  border-radius: 5px;
 }
 
 .credly__user a img {
@@ -189,6 +200,11 @@ a {
   height: 75px !important;
 }
 
-.credly__user p {
-  /* color: #223 !important; */
+
+@media only screen and (max-width: 1100px) {
+
+  .credly__user > div > div {
+    display: block !important;
+  }
+
 }
