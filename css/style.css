@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
-#blenderslide {
-  background-image: url("pics/blender.png");
+* {
+  font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
 }
 
 .tekstvak {
   font-family: 'Orbitron', Roboto, "Roboto Mono", Comfortaa, Calibri;
-  background-color: white;
+  background-color: #e5e5e570;
   margin: auto;
-  /*background-color: #d6d6d6;*/
   padding: 50px;
-  box-shadow: 5px 10px;
+  /* box-shadow: 5px 10px; */
   width: 50%;
   color: black;
   list-style-type: none;
 
   margin-top: 10vh;
   margin-bottom: 10vh;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   text-align: center;
 }
 
@@ -51,7 +50,7 @@
 }
 
 #section4 {
-  background: linear-gradient(to bottom, #28B0EB, #F2A1A1);
+  background: linear-gradient(to bottom, #28B0EB, #28eba0 /*#F2A1A1*/);
 }
 
 * {
@@ -101,55 +100,6 @@ a {
   height: 100vh;
   color: white;
   text-align: center;
-}*/
-
-.next {
-  background: linear-gradient(to right, #ff0000, #ff8c00);
-  padding: 10px;
-  color: white;
-  border-radius: 7px;
-  font-size: 20px;
-}
-
-.next1 {
-  background: linear-gradient(to right, #ff0000, #ff8c00);
-  padding: 10px;
-  color: white;
-  border-radius: 7px;
-  font-size: 20px;
-  bottom: 30px;
-  position: relative;
-}
-
-.next2 {
-  background-color: transparent;
-}
-
-.sidebar {
-  position: fixed;
-  transition: 0.3s;
-  color: transparent;
-  height: 35px;
-}
-
-#sidebar1 {
-  top: 100px;
-}
-
-#sidebar2 {
-  top: 150px;
-}
-
-#sidebar3 {
-  top: 200px;
-}
-
-#sidebar4 {
-  top: 250px;
-}
-
-#sidebar5 {
-  top: 300px;
 }
 
 .sidebar:hover {
@@ -196,9 +146,6 @@ a {
   transition: 1s width !important;
   transition: 1s height !important;
   transition: 1s background-color !important;
-  transition: 0s z-index !important;
-  transition: 0s position !important;
-  transition-delay: 4s !important;
 }
 
 .credly__user a:active {
@@ -218,7 +165,7 @@ a {
 }
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
 
   .credly__user > div > div {
     display: block !important;
