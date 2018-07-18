@@ -89,6 +89,7 @@ a {
     5px 5px 0 black,
     5px 5px 0 black;
   color: white;
+  margin: 10px;
 }
 
 
@@ -171,4 +172,19 @@ a {
     display: block !important;
   }
 
+}
+
+.projectblokjesbox {
+  display: flex;
+  justify-content: space-around !important;
+  align-content: space-around !important;
+}
+
+
+.projectblokje {
+  background-color: #e5e5e550;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25vw;
+  height: 30vh;
+  margin: 3%;
 }
