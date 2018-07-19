@@ -154,7 +154,7 @@ a {
   display: flex;
   justify-content: space-around !important;
   align-content: space-around !important;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 
@@ -206,6 +206,21 @@ a {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
+@media only screen and (max-width: 1500px) {
+
+  .projectblokje {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .projectblokjeimg {
+    height: 30vh;
+  }
+
+}
+
+
+
 
 
 .projectvak {
@@ -237,9 +252,29 @@ a {
 }
 
 .projectvaktekst {
+  display: block;
   padding: 5%;
   margin-left: 20.4vw;
   margin-right: 5%;
   color: white;
   font-size: 14;
+}
+
+@media only screen and (max-width: 1500px) {
+
+  .projectvakimg {
+    object-fit: cover;
+
+    float: left;
+    width: 70vw;
+    height: 20vh;
+  }
+
+  .projectvaktekst {
+    height: 40vh;
+    margin: 5%;
+    margin-bottom: 10vh;
+    overflow-y: scroll;
+  }
+
 }
