@@ -238,6 +238,19 @@ a {
 
 }
 
+@media only screen and (max-width: 800px) {
+
+  .projectblokje {
+    width: 80vw;
+    height: 20vh;
+  }
+
+  .projectblokjeimg {
+    height: 20vh;
+  }
+
+}
+
 
 
 
