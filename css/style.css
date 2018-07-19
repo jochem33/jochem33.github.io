@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 * {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  margin: 0;
   font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
 }
 
@@ -20,7 +24,11 @@
   /* border-radius: 40px; */
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 0.3s;
+}
 
+.tekstvak:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
 .smTabel {
@@ -53,14 +61,6 @@
 
 #section4 {
   background: linear-gradient(to bottom, #28B0EB, #28eba0 /*#F2A1A1*/);
-}
-
-* {
-  padding: 0;
-  border: 0;
-  outline: 0;
-  margin: 0;
-  font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
 }
 
 a {
@@ -159,13 +159,48 @@ a {
 
 
 .projectblokje {
-  background-color: #e5e5e550;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 25vw;
-  min-height: 30vh;
   margin: 3%;
+
+  position: relative;
+  transition: opacity 0.4s, box-shadow 0.2s;
 }
 
-#blokje1 {
-  background-image: url(/pics/arduino.png);
+.projectblokjetekst {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: inherit;
+
+  color: #095fea;
+  padding: 2vh;
+  background-color: transparent;
+  border: 3px solid #095fea;
+}
+
+.projectblokjeimg {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: inherit;
+}
+
+.projectblokje:hover .projectblokjeimg {
+  opacity: 0.3;
+  filter: alpha(opacity=50);
+}
+
+.projectblokje:hover .projectblokjetekst {
+  opacity: 1;
+  filter: alpha(opacity=50);
+}
+
+.projectblokje:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
