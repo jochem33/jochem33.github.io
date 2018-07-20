@@ -12,7 +12,7 @@
   	<script type="text/javascript">
   		$(document).ready(function() {
   			$('#fullpage').fullpage({
-  				anchors: ['home', 'about', 'projects', 'badge', 'contact'],
+  				anchors: ['home', 'about', 'projects', 'badge', 'photography', 'contact'],
   				menu: '#menu',
   				scrollingSpeed: 1000
   			});
@@ -37,8 +37,8 @@
 
       <div class="section" id="section1">
         <h1 class="titel1">About</h1>
-        <article>
-            <p class="tekstvak">I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <a class="link" href="#badge">badges</a> page. </p>
+        <article class="tekstvak">
+            <p>I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <a class="link" href="#badge">badges</a> page. </p>
         </article>
       </div>
 
@@ -117,7 +117,56 @@ In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar wi
 
 
 
-    	<div class="section" id="section4">
+      <div class="section" id="section4">
+        <div class="slide" data-anchor="0">
+
+          <h1 class="titel1">Photography</h1>
+          <div class="projectblokjesbox fotos">
+
+            <a class="projectblokje fotos" href="#photography/1">
+              <img src="pics/photography/meeuw.jpg" alt="" class="projectblokjeimg fotos">
+              <!-- <p class="projectblokjetekst fotos"></p> -->
+            </a>
+
+            <a class="projectblokje fotos" href="#photography/2">
+              <img src="pics/photography/mist.png" alt="" class="projectblokjeimg fotos">
+              <!-- <p class="projectblokjetekst fotos"></p> -->
+            </a>
+
+            <a class="projectblokje fotos" href="#photography/3">
+              <img src="pics/photography/paal.jpg" alt="" class="projectblokjeimg fotos">
+              <!-- <p class="projectblokjetekst fotos"></p> -->
+            </a>
+
+            <a class="projectblokje fotos" href="#photography/4">
+              <img src="pics/photography/strand1.jpg" alt="" class="projectblokjeimg fotos">
+              <!-- <p class="projectblokjetekst fotos"></p> -->
+            </a>
+
+            <a class="projectblokje fotos" href="#photography/5">
+              <img src="pics/photography/zand.jpg" alt="" class="projectblokjeimg fotos">
+              <!-- <p class="projectblokjetekst fotos"></p> -->
+            </a>
+
+          </div>
+
+          <div class="slide fotoslide" id="fotoslide1" data-anchor="1"></div>
+
+          <div class="slide fotoslide" id="fotoslide2" data-anchor="2"></div>
+
+          <div class="slide fotoslide" id="fotoslide3" data-anchor="3"></div>
+
+          <div class="slide fotoslide" id="fotoslide4" data-anchor="4"></div>
+
+          <div class="slide fotoslide" id="fotoslide5" data-anchor="5"></div>
+
+
+        </div>
+    	</div>
+
+
+
+    	<div class="section" id="section5">
         <h1 class="titel1">Contact</h1>
         <article class="tekstvak">
             <table class="smTabel">

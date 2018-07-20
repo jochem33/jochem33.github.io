@@ -79,7 +79,11 @@
 }
 
 #section4 {
-  background: linear-gradient(to bottom, #28B0EB, #28eba0 /*#F2A1A1*/);
+  background: linear-gradient(to bottom, #28B0EB, #8928eb /*#F2A1A1*/);
+}
+
+#section5 {
+  background: linear-gradient(to bottom, #8928eb, #eb288c/*#28eba0*/);
 }
 
 a {
@@ -238,7 +242,7 @@ a {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
   .projectblokje {
     width: 80vw;
@@ -314,4 +318,133 @@ a {
     height: 70vh;
   }
 
+}
+
+
+
+.projectblokjesbox.fotos {
+  max-height: 80vh;
+}
+
+.projectblokje.fotos {
+  background-color: #e5e5e550;
+  width: 25vw;
+  height: 30vh;
+
+  margin: 1%;
+
+  position: relative;
+  transition: opacity 0.4s, box-shadow 0.2s;
+}
+
+.projectblokjetekst.fotos {
+  top: auto;
+  bottom: 0px;
+  left: 7%;
+
+  padding: 2vh;
+  background-color: #e5e5e590;
+  border: 3px solid #095fea;
+}
+
+.projectblokjeimg {
+  height: 30vh;
+}
+
+.projectblokje.fotos:hover .projectblokjeimg {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.projectblokje.fotos:hover .projectblokjetekst {
+  opacity: 1;
+  filter: alpha(opacity=50);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  .projectblokje.fotos {
+    width: 40vw;
+    height: 30vw;
+  }
+
+  .projectblokjeimg.fotos {
+    height: 30vw;
+  }
+
+  .projectblokjesbox.fotos {
+    max-height: 70vh;
+  }
+
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  .projectblokje.fotos {
+    width: 45vw;
+    height: 30vw;
+  }
+
+  .projectblokjeimg.fotos {
+    height: 30vw;
+  }
+
+  .projectblokjesbox.fotos {
+    max-height: 70vh;
+  }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .projectblokje.fotos {
+    width: 80vw;
+    height: 20vh;
+  }
+
+  .projectblokjeimg.fotos {
+    height: 20vh;
+  }
+
+  .projectblokjesbox.fotos {
+    max-height: 70vh;
+  }
+
+
+}
+
+#fotoslide1 {
+  background-image: url("../pics/photography/meeuw.jpg");
+}
+
+#fotoslide2 {
+  background-image: url("../pics/photography/mist.png");
+}
+
+#fotoslide3 {
+  background-image: url("../pics/photography/paal.jpg");
+}
+
+#fotoslide4 {
+  background-image: url("../pics/photography/strand1.jpg");
+}
+
+#fotoslide5 {
+  background-image: url("../pics/photography/zand.jpg");
+}
+
+.fotoslide {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  background-color: black;
+}
+
+.fotoslide:active {
+  background-size: cover;
 }
