@@ -173,6 +173,9 @@ a {
 
 }
 
+
+
+
 .projectblokjesbox {
   display: flex;
   justify-content: space-around !important;
@@ -296,6 +299,14 @@ a {
   font-size: 14;
 }
 
+.projectvaklist {
+  display: inline-block;
+  padding-left: 5%;
+  margin-right: 5%;
+  color: white;
+  font-size: 14;
+}
+
 @media only screen and (max-width: 1500px) {
 
   .projectvakimg {
@@ -328,7 +339,7 @@ a {
 
 .projectblokje.fotos {
   background-color: #e5e5e550;
-  width: 25vw;
+  width: 28vw;
   height: 30vh;
 
   margin: 1%;
@@ -414,6 +425,9 @@ a {
     max-height: 70vh;
   }
 
+  .nietalsteklein {
+    display: none;
+  }
 
 }
 
@@ -445,6 +459,13 @@ a {
   background-color: black;
 }
 
-.fotoslide:active {
+/* .fotoslide:active {
   background-size: cover;
+} */
+
+
+.flickr {
+  margin: auto;
+  width: 70%;
+  height: 70%;
 }
