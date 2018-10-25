@@ -4,9 +4,6 @@ var hoog = window.innerHeight;
 //pagina.style.height = hoog + "px";
 /*page1.style.width = hoog + "px";*/
 
-pagina.style.backgroundRepeat = "no-repeat";
-pagina.style.backgroundSize = "cover";
-pagina.style.transition = "1s";
 
 auto();
 function ga() {

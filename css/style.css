@@ -31,7 +31,7 @@ a {
   background-color: #999999;
 }
 
-.contactvak {
+.aboutvak {
   background-color: #bfbfbf/*#e5e5e5*/;
   margin: auto;
 
@@ -47,48 +47,45 @@ a {
   transition: box-shadow 0.3s;
 }
 
-.contactvak:hover {
+.aboutvak:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
-.contactvakimg {
+.aboutvakimg {
   object-fit: cover;
 
   float: left;
-  width: 90vw;
-  height: 20vh;
+  width: 20vw;
+  height: 50vh;
 }
 
-.contactvaktekst {
+.aboutvaktekst {
   display: block;
   padding: 5%;
   margin-left: 20.4vw;
   margin-right: 5%;
   color: white;
   font-size: 14pt;
+
+  height: 40vh;
+  margin: 5%;
+  margin-bottom: 10vh;
+  overflow-y: scroll;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (orientation:portrait) {
 
-  .contactvakimg {
+  .aboutvakimg {
     object-fit: cover;
 
     float: left;
-    width: 20vw;
-    height: 50vh;
-  }
-
-  .contactvaktekst {
-    height: 40vh;
-    margin: 5%;
-    margin-bottom: 10vh;
-    overflow-y: scroll;
-  }
-
-  .contactvak {
     width: 70vw;
-    height: 50vh;
+    height: 30vh;
   }
+
+  .aboutvak {
+    width: 70vw;
+    height: 70vh;
 
 }
 
@@ -139,6 +136,13 @@ a {
 .section{
 	text-align:center;
   background-color: white/*#00bbff/*#515151/*#d667e0*/;
+}
+
+#section0 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  background-position: center;
 }
 
 /* #section1 {
@@ -285,6 +289,8 @@ a {
   padding: 2vh;
   background-color: transparent;
   border: 3px solid #d67302/*#095fea*/;
+
+  font-size: 14px;
 }
 
 .projectblokjeimg {
@@ -384,7 +390,7 @@ a {
   margin-left: 20.4vw;
   margin-right: 5%;
   color: white;
-  font-size: 14;
+  font-size: 18px;
 }
 
 .projectvaklist {
