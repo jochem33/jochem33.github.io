@@ -14,7 +14,8 @@
   			$('#fullpage').fullpage({
   				anchors: ['home', 'about', 'projects', 'badge', 'photography', 'contact'],
   				menu: '#menu',
-  				scrollingSpeed: 1000
+  				scrollingSpeed: 1000,
+          licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
   			});
 
   		});
@@ -37,8 +38,9 @@
 
       <div class="section" id="section1">
         <h1 class="titel1">About</h1>
-        <article class="tekstvak">
-            <p>I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. I like ice skating, programming and computers. I've worked with html, javascript, python and more which you can read in the <a class="link" href="#badge">badges</a> page. </p>
+        <article class="contactvak">
+            <img src="pics/ik.JPG" alt="image of jochem" class="contactvakimg">
+            <p class="contactvaktekst ">Hi, I'm Jochem and I'm 14 years old, I like programming, <a href="#photography">photography</a>, design and ice skating. I'm a student at the Metis <a class="link" href="https://coderclass.nl">Coderclass </a>in Amsterdam. In the coderclass we learn to program in languages as html, python, javascript and porgrams like unity and blender. You can read more about that in the <a class="link" href="#badge">badges</a> page.<br><br> I'm very exited about learning new programming languages and meeting interesting people, if you want to colabborate or want to know more about me, check the <a href="#contact">contact</a> page.</p>
         </article>
       </div>
 
@@ -48,7 +50,7 @@
 
         <div class="slide" data-anchor="1">
           <h1 class="titel1">Projects</h1>
-          <p>Here are some of my projects. For programs, take a look at my <a href="https://github.com/jochem33/">Github page</a>.</p>
+          <p>Here are some of my recent projects. For code, take a look at my <a href="https://github.com/jochem33/">Github page</a>.</p>
           <div class="projectblokjesbox">
 
             <a class="projectblokje" href="#projects/2" id="blokje1">
@@ -66,6 +68,11 @@
               <p class="projectblokjetekst">Unity Game</p>
             </a>
 
+            <a class="projectblokje" href="#projects/5" id="blokje4">
+              <img src="pics/robot.png" alt="robotics" class="projectblokjeimg">
+              <p class="projectblokjetekst">Robotics</p>
+            </a>
+
           </div>
         </div>
 
@@ -76,7 +83,7 @@
             <p class="projectvaktekst">
               In this project I made a phone safe, you can put your phone in it when you need to focus on work. It opens up after half an hour, that way you won't be distracted when you need to finish an asignment, or if you can't resist to grab your phone when you need to sleep.
               <br><br>
-              First I designed the box in fusiom 360 (as shown in the picture). After that I used a laser cutter to make a prototype.
+              First I designed the box in fusiom 360 (as shown in the picture). After that I used a laser cutter to make a prototype. That is where the project is now but I hope to continue and finish it to make a working product.
             </p>
           </div>
         </div>
@@ -85,15 +92,12 @@
           <h1 class="titel1">Tank Game</h1>
           <div class="projectvak">
             <img src="pics/tank.png" alt="tank game project" class="projectvakimg">
-            <p class="projectvaktekst">Wat is Lorem Ipsum?
-Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
-
-Waarom gebruiken we het?
-Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een min of meer normale verdeling van letters bestaat, in tegenstelling tot "Hier uw tekst, hier uw tekst" wat het tot min of meer leesbaar nederlands maakt. Veel desktop publishing pakketten en web pagina editors gebruiken tegenwoordig Lorem Ipsum als hun standaard model tekst, en een zoekopdracht naar "lorem ipsum" ontsluit veel websites die nog in aanbouw zijn. Verscheidene versies hebben zich ontwikkeld in de loop van de jaren, soms per ongeluk soms expres (ingevoegde humor en dergelijke).
-
-
-Waar komt het vandaan?
-In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero, geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissance. De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32.</p>
+            <p class="projectvaktekst">In this project we made an online game with tanks, for now it is for 2 persons only but we want to make it for more persons. If your tank gets hit by a bullet thr opponent gets one point. The first who reaches 10 points wins.
+              <br><br>
+              I'm making this game with:<br>
+              <a href="www.r4ke.tk">Jurre de Vries</a><br>
+              <a href="https://abbe-engers.github.io/">Abbe Engers</a><br>
+            </p>
           </div>
         </div>
 
@@ -102,15 +106,13 @@ In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar wi
           <div class="projectvak">
             <img src="pics/zimbabwe.png" alt="unity project" class="projectvakimg">
             <p class="projectvaktekst">
-              You stranded on an seemingly uninhabited island. You need to hunt for food and gather resources to survive. You can chop down trees to get wood and gather stones, from these materials you can make a house and weapons. Whiloe exploring the island, you meet monsters and bosses which you can fight to get special items.
+              You stranded on an seemingly uninhabited island. You need to hunt for food and gather resources to survive. You can chop down trees to get wood and gather stones, from these materials you can make a house and weapons. While exploring the island, you meet monsters and bosses which you can fight to get special items.
               <br><br>
-              I'm making this game with:
-              <ul class="projectvaklist">
-                <li><a href="http://www.luuknoverraz.nl/">Luuk Noverraz</a></li>
-                <li><a href="">Jurre de Vries</a></li>
-                <li><a href="https://midasscheffers.github.io/">Midas Scheffers</a></li>
-                <li><a href="https://midasscheffers.github.io/">Iris Postma</a></li>
-              </ul>
+              I'm making this game with:<br>
+              <a href="http://www.luuknoverraz.nl/">Luuk Noverraz</a><br>
+              <a href="www.r4ke.tk">Jurre de Vries</a><br>
+              <a href="https://midasscheffers.github.io/">Midas Scheffers</a><br>
+              <a href="">Iris Postma</a><br>
             </p>
           </div>
         </div>
@@ -131,7 +133,7 @@ In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar wi
       <div class="section" id="section4">
         <h1 class="titel1">Photography</h1>
 
-        <iframe class="flickr" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=159019402@N07&sort=0&by=user&theme=tiles_nested&scale=fill&limit=10&skin=alexis-light&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p><a  href="https://youtubevideoembed.com">youtube embed code</a></p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>     
+        <iframe class="flickr" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=159019402@N07&sort=0&by=user&theme=tiles_nested&scale=fill&limit=10&skin=alexis-light&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p><a  href="https://youtubevideoembed.com">youtube embed code</a></p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
 
 
         <!-- <div class="slide" data-anchor="0">
@@ -179,14 +181,14 @@ In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar wi
 
     	<div class="section" id="section5">
         <h1 class="titel1">Contact</h1>
-        <article class="tekstvak">
+        <article class="tekstvak tekstvak1">
             <table class="smTabel">
               <tr>
                 <td>
                 </td>
                 <td>
                   <img class="contactimg" src="pics/twitter.png">
-                  <a href="https://twitter.com/JochemDeBaas">Twitter</a>
+                  <a class="contactlink" href="https://twitter.com/JochemDeBaas">Twitter</a>
                 </td>
               </tr>
               <tr>
@@ -194,7 +196,7 @@ In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar wi
                 </td>
                 <td>
                   <img class="contactimg" src="pics/Instagram.png">
-                  <a href="https://www.instagram.com/jochembaas_official/"> Instagram</a>
+                  <a class="contactlink" href="https://www.instagram.com/jochembaas_official/"> Instagram</a>
                 </td>
               </tr>
             </table>

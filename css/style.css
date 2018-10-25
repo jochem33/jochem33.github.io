@@ -9,6 +9,10 @@
   font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
 }
 
+a {
+  color: #d67302;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -27,15 +31,76 @@
   background-color: #999999;
 }
 
+.contactvak {
+  background-color: #bfbfbf/*#e5e5e5*/;
+  margin: auto;
+
+  width: 70vw;
+  height: 50vh;
+  color: black;
+
+  /* margin-top: 10vh;
+  margin-bottom: 10vh; */
+
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 0.3s;
+}
+
+.contactvak:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
+}
+
+.contactvakimg {
+  object-fit: cover;
+
+  float: left;
+  width: 90vw;
+  height: 20vh;
+}
+
+.contactvaktekst {
+  display: block;
+  padding: 5%;
+  margin-left: 20.4vw;
+  margin-right: 5%;
+  color: white;
+  font-size: 14pt;
+}
+
+@media only screen and (max-width: 1500px) {
+
+  .contactvakimg {
+    object-fit: cover;
+
+    float: left;
+    width: 20vw;
+    height: 50vh;
+  }
+
+  .contactvaktekst {
+    height: 40vh;
+    margin: 5%;
+    margin-bottom: 10vh;
+    overflow-y: scroll;
+  }
+
+  .contactvak {
+    width: 70vw;
+    height: 50vh;
+  }
+
+}
+
 
 .tekstvak {
   font-family: Roboto, "Roboto Mono", Comfortaa, Calibri;
-  background-color: #e5e5e570;
+  background-color: #bfbfbf/*#e5e5e570*/;
   margin: auto;
   padding: 50px;
   /* box-shadow: 5px 10px; */
   width: 50%;
-  color: black;
+  color: white;
   list-style-type: none;
 
   margin-top: 10vh;
@@ -50,41 +115,51 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
+.tekstvak1{
+  width: 30% !important;
+}
+
 .smTabel {
   margin: auto;
-  width: 90%;
+  width: 60%;
   padding: 5px;
 }
 
 .contactimg {
-  width: 40px;
+  height: 40px;
   vertical-align: middle;
   padding: 10px;
 }
 
-.section{
-	text-align:center;
+.contactlink {
+  color: #d67302;
+  text-decoration: none;
 }
 
-#section1 {
-  background: linear-gradient(to bottom, #00EDFF, #28B0EB);
+.section{
+	text-align:center;
+  background-color: white/*#00bbff/*#515151/*#d667e0*/;
+}
+
+/* #section1 {
+  background: linear-gradient(to bottom, #00EDFF50, #28B0EB50);
 }
 
 #section2 {
-  background: linear-gradient(to bottom, #28B0EB, #7676F5);
+  background: linear-gradient(to bottom, #28B0EB50, #7676F550);
 }
 
 #section3 {
-  background: linear-gradient(to bottom, #7676F5, #28B0EB);
+  background: linear-gradient(to bottom, #7676F550, #28B0EB50);
 }
 
 #section4 {
-  background: linear-gradient(to bottom, #28B0EB, #8928eb /*#F2A1A1*/);
+  background: linear-gradient(to bottom, #28B0EB50, #8928eb50);
 }
 
 #section5 {
-  background: linear-gradient(to bottom, #8928eb, #eb288c/*#28eba0*/);
-}
+  background: linear-gradient(to bottom, #8928eb50, #eb288c50);
+} */
 
 a {
   text-decoration: none;
@@ -113,7 +188,7 @@ a {
     5px 5px 0 black,
     5px 5px 0 black,
     5px 5px 0 black;
-  color: white;
+  color: #ff9000/*#d67302*/;
   margin: 10px;
 }
 
@@ -188,10 +263,12 @@ a {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 25vw;
-  margin: 3%;
+  margin: 2%;
 
   position: relative;
   transition: opacity 0.4s, box-shadow 0.2s;
+  overflow: hidden;
+
 }
 
 .projectblokjetekst {
@@ -204,10 +281,10 @@ a {
   text-align: center;
   transition: inherit;
 
-  color: #095fea;
+  color: #d67302/*#095fea*/;
   padding: 2vh;
   background-color: transparent;
-  border: 3px solid #095fea;
+  border: 3px solid #d67302/*#095fea*/;
 }
 
 .projectblokjeimg {
@@ -216,6 +293,16 @@ a {
   object-fit: cover;
   opacity: 1;
   transition: inherit;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.projectblokjeimg:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .projectblokje:hover .projectblokjeimg {
@@ -231,6 +318,7 @@ a {
 .projectblokje:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
+
 
 @media only screen and (max-width: 1500px) {
 
@@ -263,10 +351,10 @@ a {
 
 
 .projectvak {
-  background-color: #e5e5e570;
+  background-color: #bfbfbf/*#e5e5e570*/;
   margin: auto;
 
-  width: 70vw;
+  width: 80vw;
   height: 70vh;
   color: black;
 
@@ -307,7 +395,7 @@ a {
   font-size: 14;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
 
   .projectvakimg {
     object-fit: cover;
@@ -468,4 +556,10 @@ a {
   margin: auto;
   width: 70%;
   height: 70%;
+}
+
+#background {
+  background-color: black;
+  width: 100%;
+  height: 100%;
 }
