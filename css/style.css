@@ -1,50 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
-/* RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+@import url("css/normalise.css");
 
 
 
@@ -222,11 +179,6 @@ a {
 
 
 
-.titel {
-  color: black;
-  padding: 10px;
-}
-
 .titel1 {
   font-family: 'Orbitron', Roboto, "Roboto Mono", Comfortaa, Calibri;
   font-size: 120px;
@@ -244,6 +196,19 @@ a {
     5px 5px 0 black;
   color: #ff9000/*#d67302*/;
   margin: 10px;
+	display: block;
+}
+
+@media only screen and (orientation:portrait) {
+
+	.titel1 {
+	  max-width: 90vw;
+		font-size: 20vw;
+	}
+
+	.titel1breder {
+		font-size: 13vw !important;
+	}
 }
 
 
@@ -316,7 +281,7 @@ a {
 .projectblokje {
   background-color: white;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  width: 25vw;
+  width: 26vw;
   /* margin: 2%; */
 
   position: relative;
@@ -380,7 +345,7 @@ a {
 @media only screen and (max-width: 1500px) {
 
   .projectblokje {
-    width: 33.3333vw;
+    width: 33.3vw;
     height: 39vh;
   }
 
@@ -391,21 +356,12 @@ a {
 
 }
 
-@media only screen and (max-width: 1000px) {
-
-  .projectblokje {
-    width: 33.3333vw;
-    height: 39vh;
-  }
-
-  .projectblokjeimg {
-    width: 100%;
-    height: 39vh;
-  }
-
+@media only screen and (orientation:portrait) {
+	.projectblokje {
+		width: 50vw;
+		height: 27vh;
+	}
 }
-
-
 
 
 
