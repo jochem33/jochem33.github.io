@@ -13,6 +13,7 @@ function ga() {
 }
 
 var plt = 1;
+var aantalslides = 4;
 rel();
 
 function terug() {
@@ -25,13 +26,11 @@ function terug() {
 }
 
 function verder() {
-    console.log("In de functie verder")
     plt = plt +1;
-    if (plt == 4) {
+    if (plt == aantalslides + 1) {
         plt = 1;
     }
     rel();
-    console.log(plt);
 }
 
 function rel() {
@@ -44,6 +43,9 @@ function rel() {
             break;
         case 3:
             pagina.style.backgroundImage = "url('pics/japan.png')";
+            break;
+        case 4:
+            pagina.style.backgroundImage = "url('pics/jochemaanhetsolderen.jpg')";
             break;
 
         default:
@@ -63,6 +65,9 @@ function auto() {
             break;
         case 3:
             pagina.style.backgroundImage = "url('pics/fll.png')";
+            break;
+        case 4:
+            pagina.style.backgroundImage = "url('pics/jochemaanhetsolderen.jpg')";
             break;
 
         default:

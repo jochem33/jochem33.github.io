@@ -14,7 +14,7 @@
   	<script type="text/javascript">
   		$(document).ready(function() {
   			$('#fullpage').fullpage({
-  				anchors: ['home', 'about', 'projects', 'badge', 'photography', 'contact'],
+  				anchors: ['home', 'about', 'projects', 'skills', 'photography', 'contact'],
   				menu: '#menu',
   				scrollingSpeed: 1000,
           licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
@@ -33,7 +33,11 @@
     	<div class="section " id="section0">
     		<h1 class="titel1">Jochem Baas</h1>
 
-        <a data-menuanchor="2thpage" href="#about"><img src="pics/arrow.gif" width="200px"></img></a>
+        <a class="start-icon-box" data-menuanchor="2thpage" href="#projects"><img src="pics/program_logo.png" class="start-icon"></img></a>
+        <a class="start-icon-box" data-menuanchor="2thpage" href="#about"><img src="pics/design_logo.png" class="start-icon"></img></a>
+        <a class="start-icon-box" data-menuanchor="2thpage" href="#photography"><img src="pics/photo_logo.png" class="start-icon"></img></a>
+
+        <!-- <a data-menuanchor="2thpage" href="#about"><img src="pics/arrow.gif" width="200px"></img></a> -->
     	</div>
 
 
@@ -61,8 +65,8 @@
             </a>
 
             <a class="projectblokje" href="#projects/3" id="blokje2">
-              <img src="pics/tank.png" alt="tank game" class="projectblokjeimg">
-              <p class="projectblokjetekst">Tank Game</p>
+              <img src="pics/bayver.png" alt="bayver" class="projectblokjeimg">
+              <p class="projectblokjetekst">Bayver</p>
             </a>
 
             <a class="projectblokje" href="#projects/4" id="blokje3">
@@ -101,14 +105,17 @@
         </div>
 
         <div class="slide" data-anchor="3">
-          <h1 class="titel1">Tank Game</h1>
+          <h1 class="titel1">Bayver</h1>
           <div class="projectvak">
-            <img src="pics/tank.png" alt="tank game project" class="projectvakimg">
-            <p class="projectvaktekst">In this project we made an online game with tanks, for now it is for 2 persons only but we want to make it for more persons. If your tank gets hit by a bullet thr opponent gets one point. The first who reaches 10 points wins.
+            <img src="pics/bayver.png" alt="bayver" class="projectvakimg">
+            <p class="projectvaktekst">Generate your route trough any city, choose what kind of route you want: touristic sights, the road less travelled, the restaurant route and more. Let bayver generate the route for your wishes!
               <br><br>
-              I'm making this game with:<br>
-              <a href="www.r4ke.tk">Jurre de Vries</a><br>
-              <a href="https://abbe-engers.github.io/">Abbe Engers</a><br>
+              I'm making this website with:<br>
+              <a href="http://luuknoverraz.nl/">Luuk Noverraz</a><br>
+              <a href="https://midasscheffers.github.io/">Midas Scheffers</a><br>
+              <br>
+              <a href="/projectzero/">Website</a><br>
+              <a href="https://github.com/jochem33/projectzero/">Github repository</a><br>
             </p>
           </div>
         </div>
@@ -160,11 +167,57 @@
 
 
     	<div class="section" id="section3">
-        <h1 class="titel1">Badges</h1>
+        <h1 class="titel1">Skills</h1>
         <div id="badges">
-          <script data-type="user" data-id="2246731" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script>
+          <p>Here are some of my skills.</p>
+          <div class="skillslistsbox">
+            <div class="skillsbox">
+              <h1>Languages</h1>
+              <ul class="skillslist">
+                <li class="skillslistitem level1skill">Python<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">HTML / CSS / javascript<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level4skill">Node.js<p class="stars"></p>/li>
+                <li class="skillslistitem level3skill">Python flask<p class="stars">&#9733;</p></li>
+                <li class="skillslistitem level3skill">C#<p class="stars">&#9733;</p></li>
+                <li class="skillslistitem level4skill">C++</li>
+                <li class="skillslistitem level3skill">Electron<p class="stars">&#9733;</p></li>
+              </ul>
+            </div>
+
+            <div class="skillsbox">
+              <h1>Software</h1>
+              <ul class="skillslist">
+                <li class="skillslistitem level1skill">Adobe Photoshop / Affinity Photo<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Adobe Premiere Pro<p class="stars">&#9733;&#9733;</p></li>
+                <li class="skillslistitem level1skill">Adobe Lightroom<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level3skill">Adobe After Effects<p class="stars">&#9733;</p></li>
+                <li class="skillslistitem level1skill">Affinity Designer<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Unity<p class="stars">&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Blender<p class="stars">&#9733;&#9733;</p></li>
+                <li class="skillslistitem level1skill">Microsoft Office<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Trello<p class="stars">&#9733;&#9733;</p></li>
+              </ul>
+            </div>
+
+            <div class="skillsbox">
+              <h1>Others</h1>
+              <ul class="skillslist">
+                <li class="skillslistitem level1skill">Working with git and github<p class="stars">&#9733;&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Using unix terminal<p class="stars">&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Working with pc hardware<p class="stars">&#9733;&#9733;</p></li>
+                <li class="skillslistitem level2skill">Working with Scrum<p class="stars">&#9733;&#9733;</p></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    	</div>
+      </div>
+      
+      <!-- <div class="section" id="section3">
+          <h1 class="titel1">Skills</h1>
+          <div id="badges">
+            <script data-type="user" data-id="2246731" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script>
+          </div>
+        </div> -->
 
 
 

@@ -574,3 +574,62 @@ a {
   width: 100%;
   height: 100%;
 }
+
+
+.start-icon {
+  width: 15vw;
+  margin: 3vw;
+  border: 6px solid #d67302;
+  padding: 2vw;
+  /* box-shadow: 5px 10px #ffffff; */
+
+}
+
+
+
+.skillslistsbox {
+  margin: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skillsbox {
+  width: 20vw;
+  height: 60vh;
+  /* border: 1px solid black; */
+}
+
+.skillslist {
+  list-style-type: none;
+}
+
+.skillslistitem {
+  margin: 2vw;
+  width: 20vw;
+  background-color: #ff9000;
+  padding: 1vw;
+  border-radius: 3vw;
+  color: white;
+  /* list-style-type: none; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:  background-color 0.3s ease-in-out,  box-shadow 0.3s ease-in-out;
+  position:relative;
+
+}
+
+.skillslistitem:hover {
+  /* background-color: #d67302; */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
+
+}
+
+.stars {
+  position: absolute;
+  left: 16vw;
+  top: 2.5vw;
+  color: white;
+  text-shadow: 2px 2px black;
+  display: block;
+  text-align: right;
+  width: 5vw;
+}
