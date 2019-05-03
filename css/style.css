@@ -152,6 +152,19 @@ a {
   background-position: center;
 }
 
+/* #section0:first-child {
+  width: 100vw;
+  height: 100vw;
+  background-color: white;
+  opacity: 0.5;
+} */
+
+/* #section1 *  {
+  z-index: 100;
+  opacity: 1;
+
+} */
+
 /* #section1 {
   background: linear-gradient(to bottom, #00EDFF50, #28B0EB50);
 }

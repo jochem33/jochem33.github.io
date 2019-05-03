@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>De quiz</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+  <body id="bodyEl">
+
+
+    <header>
+      <p id="playerName"></p>
+      <p id="questionNumber">0</p>
+    </header>
+
+
+    <section id="content">
+      <h1>Wachten op vraag...</h1>
+    </section>
+    
+
+
+
+    
+    <script src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+  
+    <script type="text/javascript">
+      var realtime = new Ably.Realtime("VJ46FQ.Dm2nrQ:u4-ZtgdjDWOl3Hqm");
+    </script>
+
+    <script src="js/questions.js"></script>
+  </body>
+</html>

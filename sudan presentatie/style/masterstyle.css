@@ -1,0 +1,14 @@
+.questionButton {
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px;
+    color: white;
+    width: 50vw;
+    font-size: 40;
+    height: 10vh;
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;
+
+}

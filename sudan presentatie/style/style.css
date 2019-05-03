@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameInput {
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px;
+    color: white;
+    width: 20vw;
+}
+
+#submitButton {
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 5px;
+    color: white;
+    width: 20vw;
+}
+
+
+h1, p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+header {
+    position: absolute;
+    display: flex;
+    width: 98%;
+    overflow: hidden;
+}
+
+#questionNumber {
+    float: right;
+    justify-self: flex-end;
+    text-align: right;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+

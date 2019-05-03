@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sudan</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+
+
+		<link rel="stylesheet" href="style/masterstyle.css">
+
+
+	</head>
+	<body>
+
+
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<p>Spelers: <span id="playerCount">0</span> </p>
+					<ul id="playerList"></ul>
+
+					
+
+				</section>
+
+				<section>
+					<h1>Wat is aap?</h1>
+
+					<button class="questionButton">Ga!</button>
+
+
+
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+
+		<script src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+		
+		<script type="text/javascript">
+			var realtime = new Ably.Realtime("VJ46FQ.Dm2nrQ:u4-ZtgdjDWOl3Hqm");
+		</script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
