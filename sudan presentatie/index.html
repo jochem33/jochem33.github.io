@@ -40,11 +40,7 @@
 				<section>
 					<section>
 						<h1>Wat is aap?</h1>
-
 						<a class="questionButton navigate-next" onclick="question('Q', 1, 'C')" href="#">Ga!</a>
-
-
-
 					</section>
 
 					<section>
@@ -60,12 +56,36 @@
 
 					<section>
 							<h1>C Goriaile</h1>
-							<table id="scoreList">
+							<table class="scoreLists">
 								<tr>
 									<td></td>
 									<td></td>
 								</tr>
 							</table>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h1>Wat is toren?</h1>
+						<a class="questionButton navigate-next" onclick="question('Q', 2, 'A')" href="#">Ga!</a>
+					</section>
+
+					<section>
+						<h1>Wat is toren?</h1>
+
+						<h2>A lengte</h2>
+						<h2>B breder</h2>
+						<h2>C dan</h2>
+						<h2>D hoogte</h2>
+
+						<a class="questionButton navigate-next" onclick="stopQuestion()" href="#">Antwoord ></a>
+					</section>
+
+					<section>
+							<h1>A lengte</h1>
+							<table class="scoreLists"></table>
 					</section>
 				</section>
 			</div>
@@ -74,9 +94,6 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },

@@ -86,33 +86,46 @@ function viewProgress() {
         return obj;
     }, {});
 
+
+
     var loops = 5;
 
     if(props.length < 5) {
         loops = props.length;
     }
 
-    for (i = 0; i < loops; i++) { 
-        var tr = document.createElement("tr");
-        var td1 = document.createElement("td");
-        var td2 = document.createElement("td");
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-
-        key = topThreeObj[Object.keys(topThreeObj)[i]];
-        console.log(key)
-        var textnode = document.createTextNode(Object.keys(topThreeObj)[i]);
-        td1.appendChild(textnode);
-        textnode = document.createTextNode(key);
-        td2.appendChild(textnode);
+    var scoreLists = document.getElementsByClassName("scoreLists")
 
 
-        document.getElementById("scoreList").appendChild(tr);
+
+    for (var i1 = 0; i1 < scoreLists.length; i1++) {
+        while (scoreLists[i1].firstChild) {
+            scoreLists[i1].removeChild(scoreLists[i1].firstChild);
+        }
+
+        for (i = 0; i < loops; i++) { 
+            var tr = document.createElement("tr");
+            var td1 = document.createElement("td");
+            var td2 = document.createElement("td");
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+    
+            key = topThreeObj[Object.keys(topThreeObj)[i]];
+            console.log(key)
+            var textnode = document.createTextNode(Object.keys(topThreeObj)[i]);
+            td1.appendChild(textnode);
+            textnode = document.createTextNode(key);
+            td2.appendChild(textnode);
+    
+    
+            scoreLists[i1].appendChild(tr);
+        }
     }
-
-
-
     // playerList = document.getElementById("playerList");
 
     // playerList.insertBefore(node, playerList.firstChild);
+}
+
+function displayTable(index, loops, topThreeObj) {
+    
 }
