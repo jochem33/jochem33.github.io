@@ -70,4 +70,49 @@ function stopQuestion(){
 
     var questions = realtime.channels.get("questions");
     questions.publish("update", ["0", "0"]);
+
+    viewProgress();
+}
+
+function viewProgress() {
+    var props = Object.keys(playerDict).map(function(key) {
+        return { key: key, value: this[key] };
+    }, playerDict);
+    props.sort(function(p1, p2) { return p2.value - p1.value; });
+    var topThree = props.slice(0, 5);
+
+    var topThreeObj = props.slice(0, 5).reduce(function(obj, prop) {
+        obj[prop.key] = prop.value;
+        return obj;
+    }, {});
+
+    var loops = 5;
+
+    if(props.length < 5) {
+        loops = props.length;
+    }
+
+    for (i = 0; i < loops; i++) { 
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        key = topThreeObj[Object.keys(topThreeObj)[i]];
+        console.log(key)
+        var textnode = document.createTextNode(Object.keys(topThreeObj)[i]);
+        td1.appendChild(textnode);
+        textnode = document.createTextNode(key);
+        td2.appendChild(textnode);
+
+
+        document.getElementById("scoreList").appendChild(tr);
+    }
+
+
+
+    // playerList = document.getElementById("playerList");
+
+    // playerList.insertBefore(node, playerList.firstChild);
 }
