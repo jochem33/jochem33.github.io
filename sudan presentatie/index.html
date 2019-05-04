@@ -6,6 +6,10 @@
 
 		<title>Sudan</title>
 
+		<link rel="stylesheet" href="style/masterstyle.css">
+
+
+
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -15,7 +19,6 @@
 
 
 
-		<link rel="stylesheet" href="style/masterstyle.css">
 
 
 	</head>
@@ -35,12 +38,35 @@
 				</section>
 
 				<section>
-					<h1>Wat is aap?</h1>
+					<section>
+						<h1>Wat is aap?</h1>
 
-					<button class="questionButton">Ga!</button>
+						<a class="questionButton navigate-next" onclick="question('Q', 1, 'C')" href="#">Ga!</a>
 
 
 
+					</section>
+
+					<section>
+						<h1>Wat is aap?</h1>
+
+						<h2>A Monkey</h2>
+						<h2>B Baboon</h2>
+						<h2>C Goriaile</h2>
+						<h2>D Crocdill</h2>
+
+						<a class="questionButton navigate-next" onclick="stopQuestion()" href="#">Antwoord ></a>
+					</section>
+
+					<section>
+							<h1>C Goriaile</h1>
+							<table id="scoreList">
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+					</section>
 				</section>
 			</div>
 		</div>
