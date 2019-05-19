@@ -34,7 +34,7 @@
 
 
 * {
-    font-family: 'Roboto Mono', monospace !important;
+    font-family: Arial, 'Roboto Mono', monospace !important;
 
 }
 
@@ -55,3 +55,7 @@
     z-index:-10;
     width:50%;
   }
+
+.smaller {
+    font-size: smaller;
+}
