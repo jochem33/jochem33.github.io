@@ -69,10 +69,11 @@ function stopQuestion(){
     answering = false;
 
     var questions = realtime.channels.get("questions");
-    questions.publish("update", ["0", "0"]);
+    questions.publish("update", ["0", "0", rightAns]);
 
     viewProgress();
 }
+
 
 function viewProgress() {
     var props = Object.keys(playerDict).map(function(key) {

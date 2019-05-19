@@ -6,6 +6,7 @@ var questionNumber = document.getElementById("questionNumber").innerHTML;
 
 document.getElementById("playerName").innerHTML = name;
 
+var lastAnswer;
 
 var questions = realtime.channels.get("questions");
 questions.subscribe(function(msg) {
@@ -27,16 +28,31 @@ questions.subscribe(function(msg) {
     }
 
     if (data[0] == "0") {
-        var noQestion = document.getElementById("noQuestion");
-        noQestion.style.display = "block";
-
         document.body.style.backgroundColor = 'rgb(' + Math.floor((Math.random() * 100) + 10) + ',' + Math.floor((Math.random() * 100) + 10) + ',' + Math.floor((Math.random() * 100) + 10) + ')';
+        
+        console.log(data.length)
+        if (data.length == 3) {
+            console.log(data[2])
+
+            if (lastAnswer == data[2]) {
+                var rightAnswer = document.getElementById("rightAnswer");
+                rightAnswer.style.display = "block";
+            } else {
+                var wrongAnswer = document.getElementById("wrongAnswer");
+                wrongAnswer.style.display = "block";
+            }
+        } else {
+            var noQestion = document.getElementById("noQuestion");
+            noQestion.style.display = "block";
+        }
     }
 });
 
 
 
 function submitAnswer(answer) {
+    lastAnswer = answer;
+
     var answers = realtime.channels.get("answers");
     answers.publish("update", [name, answer]);
 
