@@ -177,9 +177,6 @@ p {color: white;}
   /* padding: 3vw; */
 
   margin: auto;
-  margin-bottom: 5vw;
-  margin-top: 5vw;
-
 }
 
 .contacttekst {
@@ -196,7 +193,7 @@ p {color: white;}
 .contactblokken {
   height: 100vh;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   align-content: center;
   flex-direction: column;
 }
@@ -530,9 +527,8 @@ p {color: white;}
   }
 
   .sliding {
-    width: 33.3333333vw !important;
+    width: 33.3333333vw;
   }
-
 
 }
 
@@ -726,20 +722,26 @@ p {color: white;}
   
 }
 
+@media only screen and (min-width: 600px) {
+  .projectvakimg {
+    width: 42vw;
+    height: 100vh;
 
+  }
+}
 
 
 .projectvaktekst {
   /* display: block; */
-  padding: 0 5vw 0 5vw;
-  width: 100vw;
-  /* left: 42vw; */
+  padding: 0 10vw 10vw 3vw;
   position: relative;
+  left: 4vw;
 
   color: white;
   font-size: 18px;
   text-align: left;
   /* height: 80vh; */
+
 }
 
 .projectvaklist {
@@ -748,25 +750,6 @@ p {color: white;}
   margin-right: 5%;
   color: white;
   /* font-size: 14; */
-}
-
-
-@media only screen and (min-width: 600px) {
-  .projectvakimg {
-    width: 42vw;
-    height: 100vh;
-
-  }
-
-
-  .projectvaktekst {
-    /* display: block; */
-    padding: 0 5vw 0 3vw;
-    width: 50vw;
-    left: 42vw;
-    position: relative;
-    /* height: 80vh; */
-  }
 }
 
 
@@ -835,8 +818,7 @@ p {color: white;}
 }
 
 .skillsbox {
-  /* width: 80vw; */
-
+  width: 20vw;
   height: 97vh;
   /* border: 1px solid black; */
 }
@@ -846,10 +828,7 @@ p {color: white;}
 }
 
 .skillslistitem {
-  margin: auto;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-
+  margin: 2vw;
   width: 80vw;
   background-color: var(--color1);
   padding: 1vw;
@@ -875,10 +854,6 @@ p {color: white;}
     position:relative; */
   
   }
-
-  .sklillsslide {
-    display: none;
-  }
 }
 
 
@@ -892,7 +867,7 @@ p {color: white;}
 
 .stars {
   position: absolute;
-  right: 6vw;
+  left: 16vw;
   top: 2.5vw;
   color: white;
   text-shadow: 2px 2px black;
@@ -900,20 +875,6 @@ p {color: white;}
   text-align: right;
   width: 5vw;
 }
-
-/* 
-.fp-controlArrow.fp-prev {
-  background-color: black;
-  color: black;
-  border-color: black;
-
-
-}
-
-.fp-controlArrow.fp-next {
-  background-color: black;
-  border-color: black;
-} */
 
 
 .skillsbox2 {
