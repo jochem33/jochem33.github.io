@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
-@import url("css/normalize.css");
+@import url("fonts/Social_Shapes.ttf");
 
-@import url("/fonts/Social_Shapes.ttf");
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Francois+One&display=swap');
 
 
 :root {
@@ -928,4 +929,93 @@ p {color: white;}
   .skillsbox2 {
     display: block;
   }
+}
+
+
+
+
+
+
+.photography-big-title {
+  color: white;
+  height: 8vh;
+  width: 60vw;
+  border: .6vh solid white;
+  margin: auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Anton, "Roboto Mono", Comfortaa, Calibri;
+
+}
+
+.photography-small-title {
+  color: white;
+  height: 8vh;
+  width: 13vw;
+  border: .6vh solid white;
+  /* margin: 1.3333333332vw; */
+  margin: 1.4vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Francois One", Anton, "Roboto Mono", Comfortaa, Calibri;
+  font-size: larger;
+  transition: background-color 0.5s ease, box-shadow 0.2s ease, bottom 0.2s ease, right 0.2s ease;
+  background-color: transparent;
+  bottom: 0;
+  right: 0;
+}
+
+.photography-small-title.active {
+  background-color: #ffffff70;
+}
+
+
+.photography-small-title:hover {
+  background-color: #ffffff75;
+  position: relative;
+  bottom: .5vw;
+  right: .5vw;
+  
+  box-shadow: .5vw .5vw 0px 0px rgba(0,0,0,0.75);
+}
+
+
+.photography-subtitles-div {
+  margin: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+.photography-titles-div {
+  /* display: flex; */
+}
+
+
+#section4 {
+  /* transform:scale(1.1); */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+  -webkit-transition: background-image 1s ease-in-out;
+
+}
+
+
+
+#backArrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: none;
+    padding: 1vw;
+    font-size: 6vh;
 }

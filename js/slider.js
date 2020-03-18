@@ -1,5 +1,4 @@
 var pagina = document.getElementById("page1");
-console.log("Wat kijk je in de console?!");
 var hoog = window.innerHeight;
 /*var breed = window.innerWidth;*/
 pagina.style.height = hoog + "px";

@@ -368,11 +368,23 @@
 
 
 
-      <div class="section" id="section4">
-        <h2 class="titel1 titel1breder titel1center">Photography</h2>
-        <p>This page is still under development...</p>
+        <div class="section" id="section4">
+            <!-- <h2 class="titel1 titel1breder titel1center">Photography</h2> -->
+            <div class="photography-titles-div" id="photography-titles-div">
+                <h1 class="photography-big-title">Photography</h1>
+                <div class="photography-subtitles-div">
+                    <button class="photography-small-title active" onclick="changeDir('amsterdam')">Amsterdam</button>
+                    <button class="photography-small-title" onclick="changeDir('sanfrancisco')">San Fransisco</button>
+                    <button class="photography-small-title" onclick="changeDir('ameland')">Ameland</button>
+                    <button class="photography-small-title" onclick="changeDir('denemarken')">Denmark</button>
+                    <!-- <button class="photography-small-title">Tokyo</button> -->
 
+                </div>
+            </div>
+            <div id="controlsDiv">
+                <button onclick="changeDir('main')"><h1 id="backArrow">&#11013;</h1></button>
 
+            </div>
     	</div>
 
 
@@ -434,6 +446,8 @@
     <!-- <script type="text/javascript" src="js/slider2.js"></script> -->
     <script type="text/javascript" src="js/color.js"></script>
     <script type="text/javascript" src="js/projectslider.js"></script>
+    <script type="text/javascript" src="js/slider2.js"></script>
+
 
 
 
