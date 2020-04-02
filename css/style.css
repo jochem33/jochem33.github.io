@@ -1003,19 +1003,74 @@ p {color: white;}
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  transition: background-image 1s ease-in-out;
-  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image .3s ease-in-out;
+  -webkit-transition: background-image .3s ease-in-out;
 
 }
 
 
+
+
+.controlsDiv{
+    background-color: transparent;
+}
+
+#bottomControlsDiv {
+    position: absolute;
+    bottom: 0;
+
+    padding: 1vw 0 1vw 0;
+    font-size: 3vh;
+    width: 100vw;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 #backArrow {
     position: absolute;
     top: 0;
     left: 0;
     color: white;
+    background-color: transparent;
+
     display: none;
     padding: 1vw;
     font-size: 6vh;
+}
+
+
+.dot{
+    color: white;
+    background-color: #ffffff95;
+    /* font-size: 2em; */
+    border: .2vw solid white;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    transition: background-color 0.5s ease;
+    margin: .3em;
+    margin-bottom: .7em;
+}
+
+.dot.active {
+    background-color: transparent;
+}
+
+.dot:hover {
+    background-color: #ffffff40 !important;
+}
+
+.directionButtons {
+    color: white;
+    background-color: transparent;
+    font-family: Calibri, Roboto, "Roboto Mono", Comfortaa;
+    font-size: 2em;
+    transition: color 0.5s ease;
+    margin: .3vw;
+}
+
+.directionButtons:hover {
+    color: #ffffff75;
 }

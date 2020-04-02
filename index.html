@@ -382,8 +382,16 @@
                 </div>
             </div>
             <div id="controlsDiv">
-                <button onclick="changeDir('main')"><h1 id="backArrow">&#11013;</h1></button>
-
+                <button onclick="changeDir('main')" id="backArrow"><h1>&#11013;</h1></button>
+                <div id="bottomControlsDiv">
+                    <button class="directionButtons" onclick="changeSlide(false)">&#60;</button>
+                    <div id="circleDiv">
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                    </div>
+                    <button class="directionButtons" onclick="changeSlide(true)">&#62;</button>
+                </div>
             </div>
     	</div>
 
