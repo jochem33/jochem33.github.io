@@ -52,13 +52,17 @@ let h1
 
 let running = false
 
+
+let t = 0;
+
 function start(){
     a = 0
     aEarth = 0
     aSun = 0
 
+    t = 0
 
-    dt = 0.01
+    dt = InputDt.value()
     v = startSpeed.value() * 958080 * 1000 // km/s
     x = 1.0 * 10 ^ 6
     rzStart = 1.496e11 // 11
@@ -88,18 +92,22 @@ function setup() {
     createCanvas(windowWidth, windowHeight)
     frameRate(60)
     console.log(G * mz * rz^(-2) -( G * ma * x^(-2) ), G * mz * rz^(-2), -( G * ma * x^(-2) ))
-    console.log("start", s_x, heightPixels)
+    console.log("start", s_x * pixelScale, heightPixels)
 
-    startSpeed = createInput("Start snelheid")
-    startSpeed.position(10, 10)
+    startSpeed = createInput(8.789)
+    startSpeed.position(10, 40)
     startSpeed.style('font-size', '17px')
 
-    InputG = createSlider("Start snelheid")
-    InputG.position(10, 40)
+    InputG = createSlider("G")
+    InputG.position(10, 100)
     InputG.style('width', '200px')
 
+    InputDt = createInput(0.01)
+    InputDt.position(10, 150)
+    InputDt.style('width', '200px')
+
     button = createButton("Start model")
-    button.position(10, 70)
+    button.position(10, 180)
     button.style('font-size', '17px')
     button.mousePressed(start)
 }
@@ -107,15 +115,28 @@ function setup() {
 function draw() {
     background(0)
 
-    textSize(32)
-    text('word', 10, 30)
-    fill(0, 102, 153)
+    textAlign(LEFT)
+    textSize(18)
+    fill(255, 255, 255)
+    text("Start snelheid (km/s):", 10, 30)
+    text('Gravitatie constante:', 10, 90)
+    text('Delta t (s):', 10, 140)
+
+    textAlign(RIGHT)
+    text('v (m/s) = ' + expo(s_v * pixelScale, 2), windowWidth - 10, 20)
+    text('a (m/s/s) = ' + a.toFixed(2), windowWidth - 10, 40)
+    text('x (m) = ' + expo(s_x * pixelScale, 2), windowWidth - 10, 60)
+    text('T (s) = ' + expo(t * pixelScale, 2), windowWidth - 10, 80)
+    text('T (h) = ' + expo(t * pixelScale / 3600, 2), windowWidth - 10, 100)
+    text('T (d) = ' + expo(t * pixelScale / 3600 / 24, 2), windowWidth - 10, 120)
+    text('T (y) = ' + expo(t * pixelScale / 3600 / 24 / 365, 2), windowWidth - 10, 140)
+
 
 
     if(s_x < heightPixels - 1 && s_x > -heightPixels && running){
         for(let i = 0; i < frameTime; i++){
             runModel()
-            console.log("px", pixelScale, heightPixels, "\nrzP", (s_rz).toFixed(2), "\nxP", (s_x).toFixed(2), "\na", a, "\naS", aSun, "\naE", aEarth, "\nv", expo(s_v, 2), "\nrz", expo(s_rz, 2), "\nx", expo(s_x, 2), "\nmz", expo(s_mz, 2), "\nma", expo(s_ma, 2))
+            console.log("px", pixelScale, heightPixels, "\nrzP", (s_rz).toFixed(2), "\nxP", (s_x).toFixed(2), "\na", a, "\naS", aSun, "\naE", aEarth, "\nv", expo(s_v, 2), "\nrz", expo(s_rz, 2), "\nx", expo(s_x, 2), "\nmz", expo(s_mz, 2), "\nma", expo(s_ma, 2), "\nt", expo(t * pixelScale, 2))
         }
     }
 
@@ -123,7 +144,7 @@ function draw() {
     noStroke()
     fill(0, 195, 255)
     ellipse(windowCenterX, windowHeight - 100, 20, 20)
-    rect(10, 100, 3, heightPixels)
+    rect(windowWidth-10, 100, 3, heightPixels)
 
 
     fill(255, 255, 0)
@@ -134,6 +155,7 @@ function draw() {
 }
 
 function runModel() {
+    t = float(t) + float(dt);
     // a = 0
     // a = (G * ma / x^2)
     
