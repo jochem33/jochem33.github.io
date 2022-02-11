@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Jochem Baas</title>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+            
+
+        <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['home', 'photos', 'projects', 'skills', 'contact'],
+                    // menu: '#menu',
+                    scrollingSpeed: 1000,
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+                });
+
+            });
+        </script>
+
+
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <div class="contentSection">
+                    <h1 class="sectionTitle siteTitle">Jochem<br>Baas </h1>
+                    <p class="sectionParagraph">Photographer, programmer and generally cool person. For any questions, projects or just chats, contact me!</p>
+                    <a class="menuLink contactButton" href="#contact">CONTACT</a>
+                    <img src="images/logo.svg" class="logoImage" alt="line drawing of Jochem">
+                </div>
+            </div>
+
+            <div class="section " id="section1">
+                <div class="contentSection">
+                    <h1 class="sectionTitle">Photos</h1>
+                    <p class="sectionParagraph">Photographer, programmer and generally cool person. For any questions, projects or just chats, contact me!</p>
+
+                    <a href="https://www.instagram.com/fotosvanjochem/"><img class="contentImage" src="images/instaGrid.png" alt="photo grid"></a>
+                </div>
+            </div>
+
+            <div class="section " id="section0">
+                <div class="contentSection">
+                    <h1 class="sectionTitle">Projects</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div id="menubar">
+            <a class="menuLink" href="#home">JOCHEM BAAS</a>
+            <a class="menuLink" href="#photos">PHOTOS</a>
+            <a class="menuLink" href="#projects">PROJECTS</a>
+            <a class="menuLink" href="#skills">SKILLS</a>
+            <a class="menuLink contactButton" href="#contact">CONTACT</a>
+        </div>
+
+
+
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
