@@ -1,0 +1,92 @@
+
+
+
+:root {
+    --black: black;
+    --white: white;
+    --photo-secondary: #828282;
+}
+
+
+* {
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+}
+
+
+h1, h2, h3, .menuItem {
+    font-family: "Futura Lt BT", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.menuItem {
+    color: black;
+    display: block;
+}
+
+.siteTitle {
+    margin: 1vw;
+}
+
+
+
+
+.banner {
+    background-color: var(--black);
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+}
+
+.bannerText {
+    color: white;
+    display: block;
+    margin: 0;
+    /* width: 100vw; */
+    text-align: center;
+}
+
+.bannerTitle {
+    
+}
+
+.bannerParagraph {
+    margin-top: 5vh;
+}
+
+.bannerButton {
+    margin-top: 5vh;
+    border: 3px solid var(--white);
+    padding: 1vw 3vw 1vw 3vw;
+    transition: all .7s;
+}
+
+.bannerButton:hover {
+    color: black;
+    background-color: var(--white);
+}
+
