@@ -1,9 +1,12 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+let slidertext = document.getElementById("nameSliderText")
+let position = 0
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+function moveSlider(distance) {
+    position+= distance
+    if(position > slidertext.offsetWidth / 3){
+        position = 0
+    }
+    slidertext.style.transform = "translateX(-" + position + "px)";
+}
+
+setInterval(moveSlider, 1/60, .5)

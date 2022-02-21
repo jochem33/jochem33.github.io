@@ -4,29 +4,33 @@
 :root {
     --black: black;
     --white: white;
-    --photo-secondary: #828282;
+    --secondary: #FF4A41;
 }
 
 body {
     overflow-x: hidden;
+    background-color: #FFD641;
+    /* ff870b e3e2ff */
 }
 
 * {
-    font-family: 'Jost', Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 
-h1, h2, h3, .menuItem {
-    font-family: "Futura Lt BT", Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+h1, h2, h3, .menuItem, .nameSliderText, .paragraphTitle {
+    font-family: "Arial Black", Arial Black, Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: var(--black)
 }
 
 a.inlineLink {
-    text-decoration: underline;
-    color: black;
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary);
 }
 
 
@@ -36,18 +40,25 @@ header {
     height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .menu {
     display: flex;
     justify-content: space-around;
-    width: 60vw;
+    width: 70vw;
 }
 
 .menuItem {
     color: black;
     display: block;
+    padding: .3vw;
+    transition: all .3s;
+}
+
+.menuItem:hover {
+    color: white;
+    background-color: var(--secondary);
 }
 
 .siteTitle {
@@ -57,8 +68,7 @@ header {
 
 
 
-.banner {
-    background-color: var(--black);
+.nameSection {
     height: 70vh;
     width: 100vw;
     display: flex;
@@ -70,32 +80,64 @@ header {
     background-size: cover;
 }
 
-.bannerText {
-    color: white;
+.nameSectionText {
+    color: var(--black);
     display: block;
     margin: 0;
     /* width: 100vw; */
     text-align: center;
 }
 
-.bannerTitle {
-    
+.nameSectionTitle {
+    margin: 0vh;
+    padding: 0;
 }
 
-.bannerParagraph {
-    margin-top: 5vh;
+.jochem {
+    font-size: 10vh;
 }
 
-.bannerButton {
+.baas {
+    font-size: 16vh;
+    position: relative;
+    bottom: 2vh;
+}
+
+.nameSectionSlider {
+    margin: 0vh;
+    background-color: var(--black);
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover; 
+}
+
+.nameSliderText {
+    width:max-content;
+    text-align: center;
+    display: block;
+    height: 7vh;
+    color: var(--white);
+    word-spacing: 2vw;
+    font-size: large;
+    transform: translateX(100px);
+}
+
+.nameSectionButton {
+    color: var(--white);
+    background-color: var(--secondary);
     margin-top: 5vh;
-    border: 3px solid var(--white);
+    border-radius: 1vw;
     padding: 1vw 3vw 1vw 3vw;
     transition: all .7s;
 }
 
-.bannerButton:hover {
-    color: black;
-    background-color: var(--white);
+.nameSectionButton:hover {
 }
 
 .sectionParagraph {
@@ -103,25 +145,25 @@ header {
     padding: 3vw;
     margin: 0;
     font-weight: 200;
+    column-count: 2;
 }
 
 .halfWidth {
-    width: 43vw;
+    width: 50%;
 }
 
 .paragraphTitle {
-    font-weight: 400;
+    width: min-content;
+    font-size: 5vh;
     display: block;
     margin-bottom: 2vh;
+    display: block;
+    padding: .3vw;
+    color: white;
+    background-color: var(--secondary);
 }
 
-.aboutImage {
-    padding: 0;
-    margin: 3vw;
-    background-color: black;
-    width: 46vw;
-    object-fit: cover;
-}
+
 
 .vertical {
     height: 60vw;
@@ -134,6 +176,7 @@ header {
 .about {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -171,4 +214,40 @@ header {
 .contact {
     display: flex;
     align-items: flex-end;
+}
+
+
+
+#scroller {
+    display: grid;
+    width: 96vw;
+    padding: 3vw;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 80vh 80vh;
+    gap: 2vw;
+    grid-template-areas: 
+        "a a b"
+        "c c b";
+}
+
+.a {grid-area: a; }
+.b {grid-area: b; }
+.c {grid-area: c; }
+.d {grid-area: d; }
+
+
+.scrollImage {
+    padding: 0;
+    /* margin: 3vw; */
+    background-color: black;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scrollDiv {
+
+}
+
+.scrollOverlay {
+
 }
