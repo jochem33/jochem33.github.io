@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #FFD641;
+    /* background-color: #FFD641; */
     /* ff870b e3e2ff */
 }
 
@@ -25,6 +25,10 @@ h1, h2, h3, .menuItem, .nameSliderText, .paragraphTitle {
 a {
     text-decoration: none;
     color: var(--black)
+}
+
+p {
+    line-height: 1.4;
 }
 
 a.inlineLink {
@@ -213,17 +217,19 @@ header {
 
 .contact {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    height: 60vh;
 }
 
 
 
 #scroller {
+    margin-top: 12vh;
     display: grid;
     width: 96vw;
     padding: 3vw;
     grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: 80vh 80vh;
+    grid-template-rows: 80vh 240vh;
     gap: 2vw;
     grid-template-areas: 
         "a a b"
@@ -240,14 +246,69 @@ header {
     padding: 0;
     /* margin: 3vw; */
     background-color: black;
-    width: 100%;
+    width: 44vh;
+    margin: 1vh;
     object-fit: cover;
+    position: absolute;
+    object-position: 30% 50%;
+    height: 78vh;
+    border-radius: 10%;
 }
 
-.scrollDiv {
+#phoneScroll {
+    height: fit-content;
+    /* position: fixed; */
+    right: 33vw;
+    top: 10vh;
+}
 
+.columns {
+    column-count: 2;
 }
 
 .scrollOverlay {
+    height: 80vh;
+    position: absolute;
+    background-color: transparent;
+}
 
+.scrolcontent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 62vw;
+    height: 80vh;
+    overflow-x: scroll;
+}
+
+
+
+.horizontalScroller {
+    width: min-content;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.horizontalScrollElement {
+    width: 62vw;
+    /* max-height: 50vh; */
+    /* padding-right: 35vw; */
+    /* height: 70vh; */
+    /* white-space: nowrap; */
+}
+
+
+#verticalProjectScroller {
+    height: 320vh;
+}
+
+#scrollElement {
+    top: 30vh;
+    bottom: 30vh;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end; */
 }
