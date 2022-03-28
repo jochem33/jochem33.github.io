@@ -12,47 +12,56 @@ function moveSlider(distance) {
 setInterval(moveSlider, 1/60, .5)
 
 
+
 let vh = window.screen.height / 100
 
-let topContact =  document.getElementById("contactSection").getBoundingClientRect().top
+let scrollImage = document.getElementById("scrollImage")
+let projects = document.getElementsByClassName("projects")
+let projectImages = ["images/profile.jpg", "images/web/lifi.jpg", "images/web/bayver.png", "images/web/pictionairy.png"]
 
-let phoneScroll = document.getElementById("phoneScroll")
-let topPhone = phoneScroll.getBoundingClientRect().top
-let bottomPhone = phoneScroll.getBoundingClientRect().bottom
-
-let projectTextScroll = document.getElementById("scrollElement")
-let projectTextTop = projectTextScroll.getBoundingClientRect().top
-let projectTextBottom = projectTextScroll.getBoundingClientRect().top
-
+let projectBreakPoints = [0]
+for (var j = 0; j < projects.length; j++) {
+    projectBreakPoints.push(projects[j].getBoundingClientRect().top)
+}
 
 
 function checkScrollBreakpoints() {
-    if(window.scrollY > 0 && window.scrollY < topPhone - 10*vh){
-        phoneScroll.style.position = "unset"
-
-        projectTextScroll.style.position = "unset"
-    } 
-    else if (window.scrollY > topPhone - 10*vh && window.scrollY < projectTextTop - 30*vh) {
-        phoneScroll.style.position = "fixed"
-
-        projectTextScroll.style.position = "unset"
-    } 
-    else if (window.scrollY > projectTextTop - 30*vh && window.scrollY < topContact - 100*vh) {
-        phoneScroll.style.position = "fixed"
-        phoneScroll.style.marginTop = "unset"
-
-        projectTextScroll.style.position = "fixed"
-        projectTextScroll.style.top = "unset"
-    }
-    else if (window.scrollY > topContact - 100*vh && window.scrollY < 1000000000) {
-        phoneScroll.style.position = "unset"
-        phoneScroll.style.marginTop = "210vh"
-
-        projectTextScroll.style.position = "absolute"
-        projectTextScroll.style.top = "200vh"
+    for(let i = 0; i < projectBreakPoints.length; i++){
+        if(window.scrollY > projectBreakPoints[i] - 35*vh){
+            scrollImage.src = projectImages[i]
+        }
     }
 }
 
 document.addEventListener('scroll', checkScrollBreakpoints)
 
-checkScrollBreakpoints()
+
+// let vh = window.screen.height / 100
+
+// let topContact =  document.getElementById("contactSection").getBoundingClientRect().top
+
+// let phoneScroll = document.getElementById("phoneScroll")
+// let topPhone = phoneScroll.getBoundingClientRect().top
+// let bottomPhone = phoneScroll.getBoundingClientRect().bottom
+
+// let phone = document.getElementById("phone")
+
+
+// function checkScrollBreakpoints() {
+//     if(window.scrollY > 0 && window.scrollY < topPhone){
+//         phoneScroll.style.position = "unset"
+//         phone.style.marginTop = "10vh"
+//     } 
+//     else if (window.scrollY > topPhone && window.scrollY + 90*vh < topContact) {
+//         phoneScroll.style.position = "fixed"
+//         phone.style.marginTop = "10vh"
+//     } 
+//     else if (window.scrollY > topContact - 100*vh) {
+//         phoneScroll.style.position = "unset"
+//         phone.style.marginTop = "200vh"
+//     }
+// }
+
+// document.addEventListener('scroll', checkScrollBreakpoints)
+
+// checkScrollBreakpoints()
