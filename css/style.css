@@ -41,7 +41,7 @@ a.inlineLink {
 
 header {
     width: 100vw;
-    height: 15vh;
+    /* height: 30vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,14 +50,43 @@ header {
 .menu {
     display: flex;
     justify-content: space-around;
-    width: 70vw;
+    flex-direction: column;
+    width: 100vw;
 }
 
 .menuItem {
     color: black;
     display: block;
-    padding: .3vw;
+    margin: 1vh 0 1vh 0;
+    margin: .5h 0 .5vh 0;
+    text-align: center;
+    /* width: 20vw; */
+    /* margin: 0 40vw 0 40vw; */
     transition: all .3s;
+}
+
+@media (orientation: landscape) {
+    header {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        width: 70vw;
+        flex-direction: row;
+    }
+
+    .menuItem {
+        color: black;
+        display: block;
+        padding: .3vw;
+        transition: all .3s;
+    }
 }
 
 .menuItem:hover {
